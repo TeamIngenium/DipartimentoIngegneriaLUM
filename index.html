@@ -31,11 +31,17 @@
           <span>Università Giuseppe Degennaro</span>
         </div>
       </a>
+      <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-links">
         <li><a href="#chi-siamo" onclick="event.preventDefault(); openPanel('panel-chi-siamo');">Chi Siamo</a></li>
         <li><a href="#corsi">Info Corsi</a></li>
         <li><a href="#ricerca">Ricerca</a></li>
         <li><a href="#documenti">Info Utili</a></li>
+        <li><a href="#social">Comunità</a></li>
         <li><a href="#assistente" class="nav-cta">Assistente Virtuale</a></li>
       </ul>
     </div>
@@ -44,18 +50,19 @@
   <!-- ── My LUM Ribbon ─────────────────────────────────── -->
   <div class="mylum-ribbon">
     <div class="mylum-inner">
-      </a>
       <span class="mylum-label">🎓 Console:My LUM</span>
       <div class="mylum-links">
-        </a>
         <a href="https://mail.google.com/a/lum.it" target="_blank" rel="noopener" class="mylum-link mylum-btn">
           <span class="mylum-icon">📧</span> Google Workspace
         </a>
         <a href="https://lum.esse3.cineca.it/Home.do" target="_blank" rel="noopener" class="mylum-link mylum-btn">
           <span class="mylum-icon">📋</span> LUM-Esse3
+         </a>
+        <a href="https://lum.easystaff.it/AgendaWeb//index.php?_lang=it" target="_blank" rel="noopener" class="mylum-link mylum-btn">
+          <span class="mylum-icon">📅</span> EasyLUM-OrariLezioni
         </a>
         <a href="https://lum.easystaff.it/login.php?_lang=it" target="_blank" rel="noopener" class="mylum-link mylum-btn">
-          <span class="mylum-icon">📅</span> EasyLUM-OrariLezioni
+          <span class="mylum-icon">📅</span> EasyLUM-AccessoDocenti
         </a>
       </div>
     </div>
@@ -71,7 +78,7 @@
            innovazione tecnologica e una didattica di qualità riconosciuta a livello nazionale.</p>
         <div class="hero-buttons">
           <a href="#assistente" class="btn btn-primary">💬 Chatta con noi</a>
-          <a href="#" onclick="event.preventDefault(); openModal('modal-corsi');" class="btn btn-secondary">Scopri i Corsi</a>
+          <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" class="btn btn-secondary js-document-modal" data-doc-title="Offerta Formativa 2025/26" data-doc-action="⬇ Scarica PDF">Scopri i Corsi</a>
         </div>
         <div class="hero-counters">
           <div class="hero-counter">
@@ -146,7 +153,7 @@
             Opportunità di stage e tirocinio
           </li>
         </ul>
-        <a href="#" onclick="event.preventDefault(); openModal('modal-corsi');" class="btn btn-green">Scopri i Corsi →</a>
+        <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" class="btn btn-green js-document-modal" data-doc-title="Offerta Formativa 2025/26" data-doc-action="⬇ Scarica PDF">Scopri i Corsi →</a>
       </div>
 
       <div class="webchat-card">
@@ -240,31 +247,31 @@
           <div class="modulo-icon">📋</div>
           <h4>Brochure Dipartimento</h4>
           <p>Scarica la brochure ufficiale del Dipartimento di Ingegneria LUM.</p>
-          <a href="https://www.lum.it/62469" target="_blank" rel="noopener" class="btn btn-outline">⬇ Scarica Brochure</a>
+          <a href="https://www.lum.it/offerte-formative/" target="_blank" rel="noopener" class="btn btn-outline">⬇ Scarica Brochure</a>
         </div>
         <div class="modulo-card">
           <div class="modulo-icon">📚</div>
           <h4>Offerta Formativa 2025/26</h4>
           <p>PDF completo dell'offerta formativa per l'anno accademico 2025/26.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" target="_blank" rel="noopener" class="btn btn-outline">⬇ Scarica PDF</a>
+          <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" class="btn btn-outline js-document-modal" data-doc-title="Offerta Formativa 2025/26" data-doc-action="⬇ Scarica PDF">⬇ Scarica PDF</a>
         </div>
         <div class="modulo-card">
           <div class="modulo-icon">📝</div>
           <h4>Iscrizione Anni Successivi</h4>
           <p>Modulo per l'iscrizione agli anni accademici successivi al primo.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2025/06/ISCRIZIONE-ANNI-SUCCESSIVI.pdf" target="_blank" rel="noopener" class="btn btn-outline">⬇ Scarica Modulo</a>
+          <a href="https://www.lum.it/wp-content/uploads/2025/06/ISCRIZIONE-ANNI-SUCCESSIVI.pdf" class="btn btn-outline js-document-modal" data-doc-title="Iscrizione Anni Successivi" data-doc-action="⬇ Scarica Modulo">⬇ Scarica Modulo</a>
         </div>
         <div class="modulo-card">
           <div class="modulo-icon">💰</div>
           <h4>Guida Tasse ADISU Puglia</h4>
           <p>Guida aggiornata sulle tasse e i benefici ADISU Puglia per l'a.a. 2025/26.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2025/09/ADISU-TASSE-25-26-aggiornata.pdf" target="_blank" rel="noopener" class="btn btn-outline">⬇ Scarica Guida</a>
+          <a href="https://www.lum.it/wp-content/uploads/2025/09/ADISU-TASSE-25-26-aggiornata.pdf" class="btn btn-outline js-document-modal" data-doc-title="Guida Tasse ADISU Puglia" data-doc-action="⬇ Scarica Guida">⬇ Scarica Guida</a>
         </div>
         <div class="modulo-card">
           <div class="modulo-icon">🪪</div>
           <h4>Attivazione Carriera Alias</h4>
           <p>Richiesta per l'attivazione della carriera alias per studenti transgender.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2024/07/All.1-istanza-di-attivazione-carriera-alias-2-1.pdf" target="_blank" rel="noopener" class="btn btn-outline">⬇ Scarica Modulo</a>
+          <a href="https://www.lum.it/wp-content/uploads/2024/07/All.1-istanza-di-attivazione-carriera-alias-2-1.pdf" class="btn btn-outline js-document-modal" data-doc-title="Attivazione Carriera Alias" data-doc-action="⬇ Scarica Modulo">⬇ Scarica Modulo</a>
         </div>
       </div>
     </div>
@@ -295,7 +302,7 @@
             <h5>Attività Extra e Competenze Trasversali</h5>
             <p>Regolamento per il riconoscimento di CFU extra (seminari, laboratori, PCTO)</p>
           </div>
-          <a href="https://www.lum.it/wp-content/uploads/2024/10/regolamento_riconoscimento_crediti_formativi_-ulteriori_attivita_libera_scelta_modulo.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Consulta →</a>
+          <a href="https://www.lum.it/wp-content/uploads/2024/10/regolamento_riconoscimento_crediti_formativi_-ulteriori_attivita_libera_scelta_modulo.pdf" class="btn btn-outline btn-sm js-document-modal" data-doc-title="Attività Extra e Competenze Trasversali" data-doc-action="Consulta documento">Consulta →</a>
         </div>
         <div class="doc-row">
           <div class="doc-icon">📖</div>
@@ -303,7 +310,7 @@
             <h5>Calendario Esami</h5>
             <p>Dettaglio delle sessioni e dei docenti per ogni corso</p>
           </div>
-          <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnLS5NOpJTf7nityhgLo5Fr9yyAOSHynuMlM2x7Cnsm_ojLeS5RyKmwrEqYJVF-HAnfnCD-ta2oMLg/pubhtml" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Consulta →</a>
+          <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnLS5NOpJTf7nityhgLo5Fr9yyAOSHynuMlM2x7Cnsm_ojLeS5RyKmwrEqYJVF-HAnfnCD-ta2oMLg/pubhtml" class="btn btn-outline btn-sm js-document-modal" data-doc-title="Calendario Esami" data-doc-action="Apri foglio">Consulta →</a>
         </div>
         <div class="doc-row">
           <div class="doc-icon">🎓</div>
@@ -323,9 +330,9 @@
           </div>
           <p>Opportunità per acquisire CFU extra e competenze trasversali spendibili nel mondo del lavoro.</p>
           <ul class="doc-box-list">
-            <li>🔬 <a href="https://www.lum.it/eventi/?filter_cat=7699" target="_blank" rel="noopener">Seminari e Workshop</a><– 2 CFU (FameLab, Open Lecture Digital Human &amp; AI)</li>
+            <li>🔬 <a href="https://www.lum.it/eventi/?filter_cat=7699" target="_blank" rel="noopener">Seminari e Workshop</a> – 2 CFU (FameLab, Open Lecture Digital Human &amp; AI)</li>
             <li>🏭 <a href="https://www.lum.it/job-opportunities/" target="_blank" rel="noopener">Tirocini in Azienda</a> – 6/15 CFU (magistrale)</li>
-            <li>🧪 <a href=https://www.lum.it/lumascolta/ target="_blank" rel="noopener">Laboratori Specializzati</a> – LumAscolta - L.O.V. Lab e Teaching Center (TCLLL)</li> https://www.lum.it/lumascolta/
+            <li>🧪 <a href="https://www.lum.it/lumascolta/" target="_blank" rel="noopener">Laboratori Specializzati</a> – LumAscolta - L.O.V. Lab e Teaching Center (TCLLL)</li>
             <li>📰 <a href="https://www.lum.it/eventi/" target="_blank" rel="noopener">Bacheca News ed Eventi imminenti →</a></li>
           </ul>
         </div>
@@ -456,6 +463,65 @@
     </div>
   </section>
 
+  <!-- ── Comunicazione Sociale ──────────────────────────── -->
+  <section class="social-section" id="social">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Comunicazione Sociale</span>
+        <h2>Resta connesso con la community</h2>
+        <p>Segui il Dipartimento sui nostri canali social e unisciti alla Community of Practice Ingegneria per condividere idee, risorse e opportunità.</p>
+      </div>
+
+      <div class="social-grid">
+
+        <!-- Community of Practice – WhatsApp -->
+        <a href="https://chat.whatsapp.com/JbW7mbFSCeEGToMg8Ty7Cj" class="social-card social-card-cop" target="_blank" rel="noopener">
+          <div class="social-card-icon">🤝</div>
+          <div class="social-card-body">
+            <h3>Community of Practice Ingegneria</h3>
+            <p>Uno spazio collaborativo su WhatsApp per studenti, docenti e professionisti. Condividi esperienze, partecipa a discussioni tecniche e costruisci la tua rete professionale.</p>
+            <div class="cop-qr-wrap">
+              <img src="qr-whatsapp.png" alt="QR Code – Gruppo WhatsApp Community of Practice Ingegneria LUM" class="cop-qr">
+              <span class="cop-qr-hint">Inquadra il QR con WhatsApp</span>
+            </div>
+            <span class="social-cta">Unisciti al gruppo →</span>
+          </div>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/dipartimento_ingegneria_lum/" class="social-card social-card-instagram" target="_blank" rel="noopener">
+          <div class="social-card-icon">📸</div>
+          <div class="social-card-body">
+            <h3>Instagram</h3>
+            <p>Foto, storie e aggiornamenti sulla vita universitaria, eventi del dipartimento e progetti degli studenti.</p>
+            <span class="social-cta">Seguici su Instagram →</span>
+          </div>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/company/dipartimento-ingegneria-lum/" class="social-card social-card-linkedin" target="_blank" rel="noopener">
+          <div class="social-card-icon">💼</div>
+          <div class="social-card-body">
+            <h3>LinkedIn</h3>
+            <p>News accademiche, opportunità di carriera, alumni e collaborazioni con il mondo del lavoro e dell'industria.</p>
+            <span class="social-cta">Connettiti su LinkedIn →</span>
+          </div>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@DipartimentoIngegneriaLUM" class="social-card social-card-youtube" target="_blank" rel="noopener">
+          <div class="social-card-icon">▶️</div>
+          <div class="social-card-body">
+            <h3>YouTube</h3>
+            <p>Lezioni, seminari, eventi e webinar registrati. Tutto il sapere del dipartimento a portata di click.</p>
+            <span class="social-cta">Guarda i video →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ── Footer ─────────────────────────────────────────── -->
   <footer>
     <div class="footer-inner">
@@ -481,6 +547,7 @@
             <li><a href="#corsi">Corsi di Laurea</a></li>
             <li><a href="#ricerca">Ricerca</a></li>
             <li><a href="#documenti">Documenti</a></li>
+            <li><a href="#social">Comunità</a></li>
             <li><a href="#assistente">Assistente Virtuale</a></li>
           </ul>
         </div>
@@ -536,24 +603,24 @@
     </div>
   </aside>
 
-  <!-- ── Modal: Offerta Formativa PDF ───────────────────── -->
-  <div class="modal" id="modal-corsi" role="dialog" aria-label="Offerta Formativa 2025/26">
+  <!-- ── Modal: Anteprima Documento ───────────────────── -->
+  <div class="modal" id="modal-corsi" role="dialog" aria-label="Anteprima link">
     <div class="modal-dialog">
       <div class="modal-header">
-        <h3>📚 Offerta Formativa 2025/26</h3>
+        <h3 id="document-modal-title">🔗 Anteprima link</h3>
         <button class="close-btn" onclick="closeAll()" aria-label="Chiudi modale">✕</button>
       </div>
       <div class="modal-body">
-        <!-- Google Docs Viewer: fallback "Scarica PDF" shown if loading fails -->
         <iframe
-          src="https://docs.google.com/viewer?url=https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf&embedded=true"
-          title="Offerta Formativa LUM 2025/26"
+          id="document-modal-frame"
+          src="about:blank"
+          title="Anteprima link"
           loading="lazy"
         ></iframe>
       </div>
       <div class="modal-footer">
-        <p class="modal-note">Se il documento non si carica, scaricalo direttamente.</p>
-        <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" target="_blank" rel="noopener" class="btn btn-green">⬇ Scarica PDF</a>
+        <p class="modal-note" id="document-modal-note">Apri il link nella finestra sovrapposta.</p>
+        <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" target="_blank" rel="noopener" data-modal-direct="true" class="btn btn-green" id="document-modal-action">Apri link</a>
       </div>
     </div>
   </div>
@@ -586,6 +653,47 @@
 
   <!-- ── UI Interactions ───────────────────────────────── -->
   <script>
+    function getDocumentViewerUrl(url) {
+      if (/\.pdf(?:[?#]|$)/i.test(url)) {
+        return 'https://docs.google.com/viewer?url=' + encodeURIComponent(url) + '&embedded=true';
+      }
+
+      return url;
+    }
+
+    function getModalTitle(trigger) {
+      const explicitTitle = trigger.dataset.docTitle || trigger.getAttribute('aria-label') || trigger.getAttribute('title');
+      if (explicitTitle) {
+        return explicitTitle;
+      }
+
+      const containers = [
+        '.modulo-card',
+        '.doc-row',
+        '.feature-card',
+        '.news-card',
+        '.doc-box',
+        'li',
+        'section',
+        'article',
+        'aside',
+      ];
+
+      for (const selector of containers) {
+        const container = trigger.closest(selector);
+        if (!container) {
+          continue;
+        }
+
+        const heading = container.querySelector('h1, h2, h3, h4, h5, h6');
+        if (heading && heading.textContent.trim()) {
+          return heading.textContent.trim();
+        }
+      }
+
+      return trigger.textContent.replace(/\s+/g, ' ').replace(/\s*[→⬇↗]+\s*$/g, '').trim();
+    }
+
     function openPanel(id) {
       document.getElementById('overlay').classList.add('active');
       document.getElementById(id).classList.add('active');
@@ -596,15 +704,77 @@
       document.getElementById(id).classList.add('active');
       document.body.style.overflow = 'hidden';
     }
+    function openDocumentModal(options) {
+      const documentOptions = typeof options === 'string' ? { url: options } : options;
+      const documentTitle = documentOptions.title || 'Anteprima link';
+      const documentUrl = documentOptions.url || '';
+      const documentAction = documentOptions.actionText || 'Apri link';
+
+      document.getElementById('document-modal-title').textContent = '🔗 ' + documentTitle;
+      document.getElementById('document-modal-note').textContent = documentOptions.note || 'Apri il link nella finestra sovrapposta.';
+      document.getElementById('document-modal-frame').setAttribute('src', getDocumentViewerUrl(documentUrl));
+
+      const documentActionLink = document.getElementById('document-modal-action');
+      documentActionLink.setAttribute('href', documentUrl);
+      documentActionLink.textContent = documentAction;
+
+      document.getElementById('modal-corsi').setAttribute('aria-label', documentTitle);
+      openModal('modal-corsi');
+    }
     function closeAll() {
       document.getElementById('overlay').classList.remove('active');
       document.querySelectorAll('.offcanvas, .modal').forEach(function(el) {
         el.classList.remove('active');
       });
+      const documentFrame = document.getElementById('document-modal-frame');
+      if (documentFrame) {
+        documentFrame.setAttribute('src', 'about:blank');
+      }
       document.body.style.overflow = '';
     }
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') closeAll();
+    });
+
+    /* ── Hamburger menu toggle ─────────────────────────────── */
+    (function () {
+      var navbar  = document.querySelector('.navbar');
+      var toggle  = document.querySelector('.nav-toggle');
+      if (!navbar || !toggle) { return; }
+
+      toggle.addEventListener('click', function () {
+        var isOpen = navbar.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      /* Close menu when a nav link is clicked */
+      document.querySelectorAll('.nav-links a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          navbar.classList.remove('nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }());
+    document.addEventListener('click', function(e) {
+      const linkTrigger = e.target.closest('a[href]');
+      if (!linkTrigger || linkTrigger.closest('[data-modal-direct="true"]')) {
+        return;
+      }
+
+      const externalByClass = linkTrigger.classList.contains('js-document-modal');
+      const externalByTarget = linkTrigger.getAttribute('target') === '_blank';
+      const externalByHref = /^https?:\/\//i.test(linkTrigger.getAttribute('href') || '');
+
+      if (!externalByClass && !externalByTarget && !externalByHref) {
+        return;
+      }
+
+      e.preventDefault();
+      openDocumentModal({
+        url: linkTrigger.getAttribute('href'),
+        title: getModalTitle(linkTrigger),
+        note: linkTrigger.dataset.docNote,
+      });
     });
   </script>
 
