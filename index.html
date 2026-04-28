@@ -529,6 +529,109 @@
     </div>
   </section>
 
+  <!-- ── Feed Social ───────────────────────────────────────── -->
+  <section class="feed-section" id="feed">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">📱 Ultime dal Dipartimento</span>
+        <h2>Live dai nostri canali</h2>
+        <p>Reel, aggiornamenti e novità direttamente da Instagram e LinkedIn.</p>
+      </div>
+
+      <!-- ── Instagram Reels ─── -->
+      <div class="feed-block">
+        <div class="feed-block-header feed-block-instagram">
+          <span>📸 Instagram Reels</span>
+          <a href="https://www.instagram.com/dipartimento_ingegneria_lum/"
+             target="_blank" rel="noopener" data-modal-direct="true"
+             class="feed-view-all">Segui @dipartimento_ingegneria_lum →</a>
+        </div>
+        <div class="feed-reels-row">
+          <!--
+            Per aggiornare i Reel:
+            1. Apri Instagram → post/reel → ⋯ → Incorpora
+            2. Copia il codice <blockquote class="instagram-media">
+            3. Sostituisci l'intero <div class="feed-reel-ph">…</div>
+               con il codice copiato, all'interno del relativo .feed-reel-slot
+          -->
+          <div class="feed-reel-slot">
+            <div class="feed-reel-ph">
+              <div class="feed-reel-ph-inner">
+                <span class="feed-reel-ph-icon">🎬</span>
+                <strong>Reel #1</strong>
+                <span>Incolla qui il codice embed Instagram</span>
+                <a href="https://www.instagram.com/dipartimento_ingegneria_lum/"
+                   target="_blank" rel="noopener" data-modal-direct="true"
+                   class="feed-reel-ph-link">Vai al profilo →</a>
+              </div>
+            </div>
+          </div>
+          <div class="feed-reel-slot">
+            <div class="feed-reel-ph">
+              <div class="feed-reel-ph-inner">
+                <span class="feed-reel-ph-icon">🎬</span>
+                <strong>Reel #2</strong>
+                <span>Incolla qui il codice embed Instagram</span>
+                <a href="https://www.instagram.com/dipartimento_ingegneria_lum/"
+                   target="_blank" rel="noopener" data-modal-direct="true"
+                   class="feed-reel-ph-link">Vai al profilo →</a>
+              </div>
+            </div>
+          </div>
+          <div class="feed-reel-slot">
+            <div class="feed-reel-ph">
+              <div class="feed-reel-ph-inner">
+                <span class="feed-reel-ph-icon">🎬</span>
+                <strong>Reel #3</strong>
+                <span>Incolla qui il codice embed Instagram</span>
+                <a href="https://www.instagram.com/dipartimento_ingegneria_lum/"
+                   target="_blank" rel="noopener" data-modal-direct="true"
+                   class="feed-reel-ph-link">Vai al profilo →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── LinkedIn ─── -->
+      <div class="feed-block">
+        <div class="feed-block-header feed-block-linkedin">
+          <span>💼 LinkedIn</span>
+          <a href="https://www.linkedin.com/company/dipartimento-ingegneria-lum/"
+             target="_blank" rel="noopener" data-modal-direct="true"
+             class="feed-view-all">Segui la pagina →</a>
+        </div>
+        <div class="feed-linkedin-grid">
+          <a href="https://www.linkedin.com/company/dipartimento-ingegneria-lum/"
+             class="feed-li-card" target="_blank" rel="noopener" data-modal-direct="true">
+            <div class="feed-li-card-header">
+              <span class="feed-li-card-icon">🏛️</span>
+              <div>
+                <strong>Dipartimento di Ingegneria</strong>
+                <span>LUM University</span>
+              </div>
+            </div>
+            <p>News accademiche, opportunità di carriera, alumni e collaborazioni con il mondo del lavoro e dell'industria.</p>
+            <span class="feed-li-cta">Connettiti su LinkedIn →</span>
+          </a>
+          <a href="https://www.linkedin.com/company/dipartimento-ingegneria-lum/posts/"
+             class="feed-li-card" target="_blank" rel="noopener" data-modal-direct="true">
+            <div class="feed-li-card-header">
+              <span class="feed-li-card-icon">📢</span>
+              <div>
+                <strong>Ultime Notizie</strong>
+                <span>Post e Aggiornamenti</span>
+              </div>
+            </div>
+            <p>Seguici per restare aggiornato su eventi, ricerca, tirocini e opportunità per gli studenti di Ingegneria LUM.</p>
+            <span class="feed-li-cta">Leggi gli aggiornamenti →</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ── Footer ─────────────────────────────────────────── -->
   <footer>
     <div class="footer-inner">
@@ -632,6 +735,27 @@
     </div>
   </div>
 
+  <!-- ── Modal: Social Preview ────────────────────────────── -->
+  <div class="modal" id="modal-social" role="dialog" aria-label="Profilo Social">
+    <div class="modal-dialog modal-social-dialog">
+      <div class="modal-social-banner" id="social-modal-banner">
+        <button class="close-btn modal-social-close" onclick="closeAll()" aria-label="Chiudi modale">✕</button>
+        <div class="modal-social-avatar" id="social-modal-avatar">📸</div>
+      </div>
+      <div class="modal-social-body">
+        <span class="modal-social-badge" id="social-modal-badge">Instagram</span>
+        <h3 class="modal-social-name" id="social-modal-name"></h3>
+        <p class="modal-social-desc" id="social-modal-desc"></p>
+        <p class="modal-social-meta" id="social-modal-meta"></p>
+      </div>
+      <div class="modal-footer">
+        <p class="modal-note" id="social-modal-note"></p>
+        <a href="#" target="_blank" rel="noopener" data-modal-direct="true"
+           class="btn btn-green" id="social-modal-cta">Apri profilo →</a>
+      </div>
+    </div>
+  </div>
+
   <!-- ── Floating: LUM Help ─────────────────────────────── -->
   <a href="https://sites.google.com/lum.it/lumhelp/home" target="_blank" rel="noopener"
      class="lum-help-float" title="LUM Help – Supporto tecnico e FAQ">
@@ -660,6 +784,75 @@
 
   <!-- ── UI Interactions ───────────────────────────────── -->
   <script>
+    /* ── Social preview modal data ────────────────────────────── */
+    var SOCIAL_DATA = {
+      whatsapp: {
+        icon: '🤝',
+        platform: 'WhatsApp',
+        color: '#25d366',
+        name: 'Community of Practice Ingegneria',
+        desc: 'Uno spazio collaborativo su WhatsApp per studenti, docenti e professionisti. Condividi esperienze, partecipa a discussioni tecniche e costruisci la tua rete professionale.',
+        meta: '📱 Gruppo WhatsApp · Community Ingegneria LUM',
+        note: 'Inquadra il QR nella pagina o clicca per unirti direttamente al gruppo.',
+        cta: 'Unisciti al gruppo →',
+        url: 'https://chat.whatsapp.com/JbW7mbFSCeEGToMg8Ty7Cj',
+      },
+      instagram: {
+        icon: '📸',
+        platform: 'Instagram',
+        gradient: 'linear-gradient(135deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)',
+        color: '#e1306c',
+        name: '@dipartimento_ingegneria_lum',
+        desc: 'Foto, storie e aggiornamenti sulla vita universitaria, eventi del dipartimento e progetti degli studenti.',
+        meta: '📷 Foto, Reel e Stories · Segui per aggiornamenti quotidiani',
+        note: 'Segui il profilo per non perdere nessun aggiornamento.',
+        cta: 'Seguici su Instagram →',
+        url: 'https://www.instagram.com/dipartimento_ingegneria_lum/',
+      },
+      linkedin: {
+        icon: '💼',
+        platform: 'LinkedIn',
+        color: '#0077b5',
+        name: 'Dipartimento Ingegneria LUM',
+        desc: 'News accademiche, opportunità di carriera, alumni e collaborazioni con il mondo del lavoro e dell\'industria.',
+        meta: '🏢 Pagina Aziendale · Università LUM Giuseppe Degennaro',
+        note: 'Connettiti per ricevere aggiornamenti professionali e opportunità di lavoro.',
+        cta: 'Connettiti su LinkedIn →',
+        url: 'https://www.linkedin.com/company/dipartimento-ingegneria-lum/',
+      },
+      youtube: {
+        icon: '▶️',
+        platform: 'YouTube',
+        color: '#ff0000',
+        name: 'Dipartimento di Ingegneria LUM',
+        desc: 'Lezioni, seminari, eventi e webinar registrati. Tutto il sapere del dipartimento a portata di click.',
+        meta: '🎬 Video, Webinar e Lezioni · Canale Ufficiale',
+        note: 'Iscriviti al canale per non perdere nessun contenuto.',
+        cta: 'Guarda i video →',
+        url: 'https://www.youtube.com/@DipartimentoIngegneriaLUM',
+      },
+    };
+
+    function openSocialModal(type) {
+      var d = SOCIAL_DATA[type];
+      if (!d) { return; }
+      var banner = document.getElementById('social-modal-banner');
+      banner.style.background = d.gradient || d.color;
+      document.getElementById('social-modal-avatar').textContent = d.icon;
+      var badge = document.getElementById('social-modal-badge');
+      badge.textContent = d.platform;
+      badge.style.background = d.color;
+      document.getElementById('social-modal-name').textContent = d.name;
+      document.getElementById('social-modal-desc').textContent = d.desc;
+      document.getElementById('social-modal-meta').textContent = d.meta;
+      document.getElementById('social-modal-note').textContent = d.note;
+      var ctaBtn = document.getElementById('social-modal-cta');
+      ctaBtn.textContent = d.cta;
+      ctaBtn.setAttribute('href', d.url);
+      document.getElementById('modal-social').setAttribute('aria-label', d.platform + ' – ' + d.name);
+      openModal('modal-social');
+    }
+
     function getDocumentViewerUrl(url) {
       if (/\.pdf(?:[?#]|$)/i.test(url)) {
         return 'https://docs.google.com/viewer?url=' + encodeURIComponent(url) + '&embedded=true';
@@ -768,6 +961,21 @@
         return;
       }
 
+      /* Social cards → branded social modal (never iframe) */
+      if (linkTrigger.classList.contains('social-card')) {
+        const cls = linkTrigger.classList;
+        const socialType = cls.contains('social-card-instagram') ? 'instagram'
+                         : cls.contains('social-card-linkedin')  ? 'linkedin'
+                         : cls.contains('social-card-youtube')   ? 'youtube'
+                         : cls.contains('social-card-cop')       ? 'whatsapp'
+                         : null;
+        if (socialType) {
+          e.preventDefault();
+          openSocialModal(socialType);
+          return;
+        }
+      }
+
       const externalByClass = linkTrigger.classList.contains('js-document-modal');
       const externalByTarget = linkTrigger.getAttribute('target') === '_blank';
       const externalByHref = /^https?:\/\//i.test(linkTrigger.getAttribute('href') || '');
@@ -784,6 +992,8 @@
       });
     });
   </script>
+  <!-- ── Instagram Embed Script (attiva gli embed <blockquote class="instagram-media">) ── -->
+  <script async defer src="//www.instagram.com/embed.js"></script>
 
 </body>
 </html>
