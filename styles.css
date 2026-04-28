@@ -1662,12 +1662,10 @@ section[id], div.stats-bar, footer {
 /* Feed responsive */
 @media (max-width: 1024px) {
   .feed-reels-row { grid-template-columns: repeat(2, 1fr); }
-  .feed-reel-slot:last-child { display: none; }
 }
 
 @media (max-width: 768px) {
   .feed-reels-row { grid-template-columns: 1fr; }
-  .feed-reel-slot:last-child { display: flex; }
   .feed-linkedin-grid { grid-template-columns: 1fr; }
   .feed-block-header { flex-direction: column; align-items: flex-start; gap: .4rem; }
 }
