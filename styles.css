@@ -1533,6 +1533,7 @@ section[id], div.stats-bar, footer {
   display: flex;
   flex-direction: column;
   min-height: 380px;
+  overflow: hidden;
 }
 
 /* When a real Instagram embed replaces the placeholder */
@@ -1541,8 +1542,16 @@ section[id], div.stats-bar, footer {
   flex: 1;
   margin: 0 auto !important;
   width: 100% !important;
+  min-width: 0 !important;
   max-width: 100% !important;
   border-radius: var(--radius-md) !important;
+}
+
+/* Override min-width on the iframe injected by embed.js */
+.feed-reel-slot iframe {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
 }
 
 .feed-reel-ph {
