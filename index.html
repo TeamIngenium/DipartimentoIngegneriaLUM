@@ -34,22 +34,27 @@
       <a href="#" class="nav-brand">
         <img src="icon-192x192.png" alt="LUM Logo" class="nav-logo">
         <div class="nav-name">
-          Ingegneria LUM
-          <span>Università Giuseppe Degennaro</span>
+          <span data-i18n="nav.brand">Ingegneria LUM</span>
+          <span class="nav-name-sub" data-i18n="nav.brandSub">Università Giuseppe Degennaro</span>
         </div>
       </a>
-      <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">
+      <button class="nav-toggle" aria-expanded="false" data-i18n-attr='{"aria-label":"nav.toggleLabel"}'>
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="#chi-siamo" onclick="event.preventDefault(); openPanel('panel-chi-siamo');">Chi Siamo</a></li>
-        <li><a href="#corsi">Info Corsi</a></li>
-        <li><a href="#ricerca">Ricerca</a></li>
-        <li><a href="#documenti">Info Utili</a></li>
-        <li><a href="#social">Comunità</a></li>
-        <li><a href="#assistente" class="nav-cta">Assistente Virtuale</a></li>
+        <li><a href="#chi-siamo" onclick="event.preventDefault(); openPanel('panel-chi-siamo');" data-i18n="nav.chiSiamo">Chi Siamo</a></li>
+        <li><a href="#corsi" data-i18n="nav.corsi">Info Corsi</a></li>
+        <li><a href="#ricerca" data-i18n="nav.ricerca">Ricerca</a></li>
+        <li><a href="#documenti" data-i18n="nav.documenti">Info Utili</a></li>
+        <li><a href="#social" data-i18n="nav.social">Comunità</a></li>
+        <li><a href="#assistente" class="nav-cta" data-i18n="nav.assistente">Assistente Virtuale</a></li>
+        <li class="lang-switcher">
+          <button class="lang-switch" data-lang="it" aria-label="Italiano" aria-current="true">IT</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button class="lang-switch" data-lang="en" aria-label="English" aria-current="false">EN</button>
+        </li>
       </ul>
     </div>
   </nav>
@@ -57,7 +62,7 @@
   <!-- ── My LUM Ribbon ─────────────────────────────────── -->
   <div class="mylum-ribbon">
     <div class="mylum-inner">
-      <span class="mylum-label">🎓 Console:My LUM</span>
+      <span class="mylum-label" data-i18n="mylum.label">🎓 Console:My LUM</span>
       <div class="mylum-links">
         <a href="https://mail.google.com/a/lum.it" target="_blank" rel="noopener" class="mylum-link mylum-btn">
           <span class="mylum-icon">📧</span> Google Workspace
@@ -65,11 +70,11 @@
         <a href="https://lum.esse3.cineca.it/Home.do" target="_blank" rel="noopener" class="mylum-link mylum-btn">
           <span class="mylum-icon">📋</span> LUM-Esse3
          </a>
-        <a href="https://lum.easystaff.it/AgendaWeb//index.php?_lang=it" target="_blank" rel="noopener" class="mylum-link mylum-btn">
-          <span class="mylum-icon">📅</span> EasyLUM-OrariLezioni
-        </a>
-        <a href="https://lum.easystaff.it/login.php?_lang=it" target="_blank" rel="noopener" class="mylum-link mylum-btn">
-          <span class="mylum-icon">📅</span> EasyLUM-AccessoDocenti
+        <a href="https://lum.easystaff.it/AgendaWeb//index.php?_lang=it" data-i18n-href="links.easylumOrari" target="_blank" rel="noopener" class="mylum-link mylum-btn">
+          <span class="mylum-icon">📅</span> <span data-i18n="mylum.orari">EasyLUM-OrariLezioni</span>
+         </a>
+        <a href="https://lum.easystaff.it/login.php?_lang=it" data-i18n-href="links.easylumDocenti" target="_blank" rel="noopener" class="mylum-link mylum-btn">
+          <span class="mylum-icon">📅</span> <span data-i18n="mylum.docenti">EasyLUM-AccessoDocenti</span>
         </a>
       </div>
     </div>
@@ -79,26 +84,25 @@
   <section class="hero" id="chi-siamo">
     <div class="hero-inner">
       <div class="hero-content">
-        <span class="section-badge">Università Giuseppe Degennaro</span>
-        <h1>Dipartimento di<br><span>Ingegneria</span></h1>
-        <p>Formiamo gli ingegneri del futuro attraverso ricerca d'eccellenza,
-           innovazione tecnologica e una didattica di qualità riconosciuta a livello nazionale.</p>
+        <span class="section-badge" data-i18n="hero.badge">Università Giuseppe Degennaro</span>
+        <h1 data-i18n-html="hero.title">Dipartimento di<br><span>Ingegneria</span></h1>
+        <p data-i18n="hero.desc">Formiamo gli ingegneri del futuro attraverso ricerca d'eccellenza, innovazione tecnologica e una didattica di qualità riconosciuta a livello nazionale.</p>
         <div class="hero-buttons">
-          <a href="#assistente" class="btn btn-primary">💬 Chatta con noi</a>
-          <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" class="btn btn-secondary js-document-modal" data-doc-title="Offerta Formativa 2025/26" data-doc-action="⬇ Scarica PDF">Scopri i Corsi</a>
+          <a href="#assistente" class="btn btn-primary" data-i18n="hero.btnChat">💬 Chatta con noi</a>
+          <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" class="btn btn-secondary js-document-modal" data-doc-title="Offerta Formativa 2025/26" data-doc-action="⬇ Scarica PDF" data-i18n="hero.btnCorsi">Scopri i Corsi</a>
         </div>
         <div class="hero-counters">
           <div class="hero-counter">
             <strong>500+</strong>
-            <span>Studenti</span>
+            <span data-i18n="hero.counter1Label">Studenti</span>
           </div>
           <div class="hero-counter">
             <strong>50+</strong>
-            <span>Docenti</span>
+            <span data-i18n="hero.counter2Label">Docenti</span>
           </div>
           <div class="hero-counter">
             <strong>25+</strong>
-            <span>Anni di eccellenza</span>
+            <span data-i18n="hero.counter3Label">Anni di eccellenza</span>
           </div>
         </div>
       </div>
@@ -107,22 +111,22 @@
         <div class="hero-card">
           <div class="hero-card-icon">🎓</div>
           <div>
-            <h4>Laurea Triennale e Magistrale Gestionale</h4>
-            <p>Ingegneria dell'Informatica e Bio Medicale</p>
+            <h4 data-i18n="hero.card1Title">Laurea Triennale e Magistrale Gestionale</h4>
+            <p data-i18n="hero.card1Desc">Ingegneria dell'Informatica e Bio Medicale</p>
           </div>
         </div>
         <div class="hero-card">
           <div class="hero-card-icon">🔬</div>
           <div>
-            <h4>Ricerca Avanzata</h4>
-            <p>Laboratori e progetti europei</p>
+            <h4 data-i18n="hero.card2Title">Ricerca Avanzata</h4>
+            <p data-i18n="hero.card2Desc">Laboratori e progetti europei</p>
           </div>
         </div>
         <div class="hero-card">
           <div class="hero-card-icon">🌍</div>
           <div>
-            <h4>Programma Erasmus+</h4>
-            <p>Università partner in tutta Europa</p>
+            <h4 data-i18n="hero.card3Title">Programma Erasmus+</h4>
+            <p data-i18n="hero.card3Desc">Università partner in tutta Europa</p>
           </div>
         </div>
       </div>
@@ -133,34 +137,32 @@
   <section class="chat-section" id="assistente">
     <div class="chat-grid">
       <div class="chat-info">
-        <span class="section-badge">Assistente Virtuale</span>
-        <h2>Il tuo assistente<br>sempre disponibile</h2>
-        <p>Il nostro assistente virtuale risponde 24 ore su 24, 7 giorni su 7
-           a tutte le tue domande sul dipartimento: corsi, iscrizioni, calendario,
-           contatti e molto altro.</p>
+        <span class="section-badge" data-i18n="chat.badge">Assistente Virtuale</span>
+        <h2 data-i18n-html="chat.title">Il tuo assistente<br>sempre disponibile</h2>
+        <p data-i18n="chat.desc">Il nostro assistente virtuale risponde 24 ore su 24, 7 giorni su 7 a tutte le tue domande sul dipartimento: corsi, iscrizioni, calendario, contatti e molto altro.</p>
         <ul class="check-list">
           <li>
             <span class="check-icon">✓</span>
-            Informazioni sui corsi di laurea
+            <span data-i18n="chat.check1">Informazioni sui corsi di laurea</span>
           </li>
           <li>
             <span class="check-icon">✓</span>
-            Procedura di immatricolazione
+            <span data-i18n="chat.check2">Procedura di immatricolazione</span>
           </li>
           <li>
             <span class="check-icon">✓</span>
-            Calendario esami e lezioni
+            <span data-i18n="chat.check3">Calendario esami e lezioni</span>
           </li>
           <li>
             <span class="check-icon">✓</span>
-            Contatti e uffici del dipartimento
+            <span data-i18n="chat.check4">Contatti e uffici del dipartimento</span>
           </li>
           <li>
             <span class="check-icon">✓</span>
-            Opportunità di stage e tirocinio
+            <span data-i18n="chat.check5">Opportunità di stage e tirocinio</span>
           </li>
         </ul>
-        <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" class="btn btn-green js-document-modal" data-doc-title="Offerta Formativa 2025/26" data-doc-action="⬇ Scarica PDF">Scopri i Corsi →</a>
+        <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" class="btn btn-green js-document-modal" data-doc-title="Offerta Formativa 2025/26" data-doc-action="⬇ Scarica PDF" data-i18n="chat.btnCorsi">Scopri i Corsi →</a>
       </div>
 
       <div class="webchat-card">
@@ -169,13 +171,13 @@
           <div class="webchat-identity">
             <div class="webchat-avatar">🤖</div>
             <div>
-              <h4>Assistente LUM</h4>
-              <span>Dipartimento di Ingegneria</span>
+              <h4 data-i18n="chat.botName">Assistente LUM</h4>
+              <span data-i18n="chat.botSubtitle">Dipartimento di Ingegneria</span>
             </div>
           </div>
           <div class="status-indicator">
             <span class="status-dot"></span>
-            Online
+            <span data-i18n="chat.botStatus">Online</span>
           </div>
         </div>
         <!-- Botpress webchat renders here -->
@@ -189,53 +191,46 @@
   <section class="features-section" id="corsi">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-badge">Cosa Offriamo</span>
-        <h2>Eccellenza nella Formazione</h2>
-        <p>Programmi accademici di alto livello, laboratori all'avanguardia
-           e un corpo docenti di eccellenza internazionale.</p>
+        <span class="section-badge" data-i18n="features.badge">Cosa Offriamo</span>
+        <h2 data-i18n="features.title">Eccellenza nella Formazione</h2>
+        <p data-i18n="features.desc">Programmi accademici di alto livello, laboratori all'avanguardia e un corpo docenti di eccellenza internazionale.</p>
       </div>
       <div class="features-grid">
-        <div class="feature-card" title="Scopri i laboratori e i progetti di ricerca finanziati a livello nazionale ed europeo">
+        <div class="feature-card" data-i18n-attr='{"title":"features.card1Tooltip"}' title="Scopri i laboratori e i progetti di ricerca finanziati a livello nazionale ed europeo">
           <div class="feature-icon">🔬</div>
-          <h3>Ricerca Avanzata</h3>
-          <p>Laboratori di ricerca all'avanguardia con progetti finanziati
-             a livello nazionale ed europeo.</p>
-          <a href="https://www.lum.it/strutture-di-ricerca/" target="_blank" rel="noopener" class="btn btn-outline feature-btn">Scopri di più →</a>
+          <h3 data-i18n="features.card1Title">Ricerca Avanzata</h3>
+          <p data-i18n="features.card1Desc">Laboratori di ricerca all'avanguardia con progetti finanziati a livello nazionale ed europeo.</p>
+          <a href="https://www.lum.it/strutture-di-ricerca/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card1Btn">Scopri di più →</a>
         </div>
-        <div class="feature-card" title="Esplora il nostro approccio digitale e i partner tecnologici orientati a Industria 5.0">
+        <div class="feature-card" data-i18n-attr='{"title":"features.card2Tooltip"}' title="Esplora il nostro approccio digitale e i partner tecnologici orientati a Industria 5.0">
           <div class="feature-icon">💡</div>
-          <h3>Innovazione</h3>
-          <p>Approccio didattico innovativo con tecnologie digitali
-             e metodologie moderne orientate al mercato.</p>
-          <a href="https://www.lumenterprise.it/" target="_blank" rel="noopener" class="btn btn-outline feature-btn">Scopri di più →</a>
+          <h3 data-i18n="features.card2Title">Innovazione</h3>
+          <p data-i18n="features.card2Desc">Approccio didattico innovativo con tecnologie digitali e metodologie moderne orientate al mercato.</p>
+          <a href="https://www.lumenterprise.it/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card2Btn">Scopri di più →</a>
         </div>
-        <div class="feature-card" title="Esplora i programmi Erasmus+ e gli accordi con le università partner in Europa e nel mondo">
+        <div class="feature-card" data-i18n-attr='{"title":"features.card3Tooltip"}' title="Esplora i programmi Erasmus+ e gli accordi con le università partner in Europa e nel mondo">
           <div class="feature-icon">🌍</div>
-          <h3>Internazionalizzazione</h3>
-          <p>Programmi Erasmus+ e accordi con università partner
-             in tutta Europa e nel mondo.</p>
-          <a href="https://www.lum.it/international-mobility/" target="_blank" rel="noopener" class="btn btn-outline feature-btn">Scopri di più →</a>
+          <h3 data-i18n="features.card3Title">Internazionalizzazione</h3>
+          <p data-i18n="features.card3Desc">Programmi Erasmus+ e accordi con università partner in tutta Europa e nel mondo.</p>
+          <a href="https://www.lum.it/international-mobility/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card3Btn">Scopri di più →</a>
         </div>
-        <div class="feature-card" title="Trova stage, tirocini e opportunità di lavoro concrete con le imprese del territorio">
+        <div class="feature-card" data-i18n-attr='{"title":"features.card4Tooltip"}' title="Trova stage, tirocini e opportunità di lavoro concrete con le imprese del territorio">
           <div class="feature-icon">🤝</div>
-          <h3>Imprese Partner</h3>
-          <p>Forti legami con il territorio e le imprese per stage,
-             tirocini e opportunità di lavoro concrete.</p>
-          <a href="https://www.lum.it/job-opportunities/" target="_blank" rel="noopener" class="btn btn-outline feature-btn">Scopri di più →</a>
+          <h3 data-i18n="features.card4Title">Imprese Partner</h3>
+          <p data-i18n="features.card4Desc">Forti legami con il territorio e le imprese per stage, tirocini e opportunità di lavoro concrete.</p>
+          <a href="https://www.lum.it/job-opportunities/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card4Btn">Scopri di più →</a>
         </div>
-        <div class="feature-card" title="Consulta l'offerta formativa completa: triennali, magistrali e dottorati 2025/26">
+        <div class="feature-card" data-i18n-attr='{"title":"features.card5Tooltip"}' title="Consulta l'offerta formativa completa: triennali, magistrali e dottorati 2025/26">
           <div class="feature-icon">📚</div>
-          <h3>Corsi di Laurea</h3>
-          <p>Triennali, magistrali e dottorati di ricerca in diverse
-             discipline dell'ingegneria moderna.</p>
-          <a href="https://www.lum.it/dipartimento-di-ingegneria/" target="_blank" rel="noopener" class="btn btn-outline feature-btn">Scopri di più →</a>
+          <h3 data-i18n="features.card5Title">Corsi di Laurea</h3>
+          <p data-i18n="features.card5Desc">Triennali, magistrali e dottorati di ricerca in diverse discipline dell'ingegneria moderna.</p>
+          <a href="https://www.lum.it/dipartimento-di-ingegneria/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card5Btn">Scopri di più →</a>
         </div>
-        <div class="feature-card" title="Scopri gli accreditamenti internazionali e i premi per la qualità della ricerca del Dipartimento">
+        <div class="feature-card" data-i18n-attr='{"title":"features.card6Tooltip"}' title="Scopri gli accreditamenti internazionali e i premi per la qualità della ricerca del Dipartimento">
           <div class="feature-icon">🏆</div>
-          <h3>Riconoscimenti</h3>
-          <p>Accreditamenti internazionali e premi per la qualità
-             dell'offerta formativa e della ricerca.</p>
-          <a href="https://ingenium.imensa.it/" target="_blank" rel="noopener" class="btn btn-outline feature-btn">Scopri di più →</a>
+          <h3 data-i18n="features.card6Title">Riconoscimenti</h3>
+          <p data-i18n="features.card6Desc">Accreditamenti internazionali e premi per la qualità dell'offerta formativa e della ricerca.</p>
+          <a href="https://ingenium.imensa.it/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card6Btn">Scopri di più →</a>
         </div>
       </div>
     </div>
@@ -245,40 +240,40 @@
   <section class="modulistica-section" id="modulistica">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-badge">Modulistica</span>
-        <h2>Documenti e Moduli</h2>
-        <p>Scarica rapidamente i moduli più richiesti dalla segreteria studenti.</p>
+        <span class="section-badge" data-i18n="modulistica.badge">Modulistica</span>
+        <h2 data-i18n="modulistica.title">Documenti e Moduli</h2>
+        <p data-i18n="modulistica.desc">Scarica rapidamente i moduli più richiesti dalla segreteria studenti.</p>
       </div>
       <div class="modulistica-grid">
         <div class="modulo-card">
           <div class="modulo-icon">📋</div>
-          <h4>Brochure Dipartimento</h4>
-          <p>Scarica la brochure ufficiale del Dipartimento di Ingegneria LUM.</p>
-          <a href="https://www.lum.it/offerte-formative/" target="_blank" rel="noopener" class="btn btn-outline">⬇ Scarica Brochure</a>
+          <h4 data-i18n="modulistica.doc1Title">Brochure Dipartimento</h4>
+          <p data-i18n="modulistica.doc1Desc">Scarica la brochure ufficiale del Dipartimento di Ingegneria LUM.</p>
+          <a href="https://www.lum.it/offerte-formative/" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="modulistica.doc1Btn">⬇ Scarica Brochure</a>
         </div>
         <div class="modulo-card">
           <div class="modulo-icon">📚</div>
-          <h4>Offerta Formativa 2025/26</h4>
-          <p>PDF completo dell'offerta formativa per l'anno accademico 2025/26.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" class="btn btn-outline js-document-modal" data-doc-title="Offerta Formativa 2025/26" data-doc-action="⬇ Scarica PDF">⬇ Scarica PDF</a>
+          <h4 data-i18n="modulistica.doc2Title">Offerta Formativa 2025/26</h4>
+          <p data-i18n="modulistica.doc2Desc">PDF completo dell'offerta formativa per l'anno accademico 2025/26.</p>
+          <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" class="btn btn-outline js-document-modal" data-doc-title="Offerta Formativa 2025/26" data-doc-action="⬇ Scarica PDF" data-i18n="modulistica.doc2Btn">⬇ Scarica PDF</a>
         </div>
         <div class="modulo-card">
           <div class="modulo-icon">📝</div>
-          <h4>Iscrizione Anni Successivi</h4>
-          <p>Modulo per l'iscrizione agli anni accademici successivi al primo.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2025/06/ISCRIZIONE-ANNI-SUCCESSIVI.pdf" class="btn btn-outline js-document-modal" data-doc-title="Iscrizione Anni Successivi" data-doc-action="⬇ Scarica Modulo">⬇ Scarica Modulo</a>
+          <h4 data-i18n="modulistica.doc3Title">Iscrizione Anni Successivi</h4>
+          <p data-i18n="modulistica.doc3Desc">Modulo per l'iscrizione agli anni accademici successivi al primo.</p>
+          <a href="https://www.lum.it/wp-content/uploads/2025/06/ISCRIZIONE-ANNI-SUCCESSIVI.pdf" class="btn btn-outline js-document-modal" data-doc-title="Iscrizione Anni Successivi" data-doc-action="⬇ Scarica Modulo" data-i18n="modulistica.doc3Btn">⬇ Scarica Modulo</a>
         </div>
         <div class="modulo-card">
           <div class="modulo-icon">💰</div>
-          <h4>Guida Tasse ADISU Puglia</h4>
-          <p>Guida aggiornata sulle tasse e i benefici ADISU Puglia per l'a.a. 2025/26.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2025/09/ADISU-TASSE-25-26-aggiornata.pdf" class="btn btn-outline js-document-modal" data-doc-title="Guida Tasse ADISU Puglia" data-doc-action="⬇ Scarica Guida">⬇ Scarica Guida</a>
+          <h4 data-i18n="modulistica.doc4Title">Guida Tasse ADISU Puglia</h4>
+          <p data-i18n="modulistica.doc4Desc">Guida aggiornata sulle tasse e i benefici ADISU Puglia per l'a.a. 2025/26.</p>
+          <a href="https://www.lum.it/wp-content/uploads/2025/09/ADISU-TASSE-25-26-aggiornata.pdf" class="btn btn-outline js-document-modal" data-doc-title="Guida Tasse ADISU Puglia" data-doc-action="⬇ Scarica Guida" data-i18n="modulistica.doc4Btn">⬇ Scarica Guida</a>
         </div>
         <div class="modulo-card">
           <div class="modulo-icon">🪪</div>
-          <h4>Attivazione Carriera Alias</h4>
-          <p>Richiesta per l'attivazione della carriera alias per studenti transgender.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2024/07/All.1-istanza-di-attivazione-carriera-alias-2-1.pdf" class="btn btn-outline js-document-modal" data-doc-title="Attivazione Carriera Alias" data-doc-action="⬇ Scarica Modulo">⬇ Scarica Modulo</a>
+          <h4 data-i18n="modulistica.doc5Title">Attivazione Carriera Alias</h4>
+          <p data-i18n="modulistica.doc5Desc">Richiesta per l'attivazione della carriera alias per studenti transgender.</p>
+          <a href="https://www.lum.it/wp-content/uploads/2024/07/All.1-istanza-di-attivazione-carriera-alias-2-1.pdf" class="btn btn-outline js-document-modal" data-doc-title="Attivazione Carriera Alias" data-doc-action="⬇ Scarica Modulo" data-i18n="modulistica.doc5Btn">⬇ Scarica Modulo</a>
         </div>
       </div>
     </div>
@@ -288,9 +283,9 @@
   <section class="documenti-section" id="documenti">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-badge">📄 Documenti e Regolamenti</span>
-        <h2>Pianifica il tuo Percorso</h2>
-        <p>Regolamenti ufficiali e opportunità per acquisire crediti extra (CFU) e arricchire il tuo curriculum.</p>
+        <span class="section-badge" data-i18n="documenti.badge">📄 Documenti e Regolamenti</span>
+        <h2 data-i18n="documenti.title">Pianifica il tuo Percorso</h2>
+        <p data-i18n="documenti.desc">Regolamenti ufficiali e opportunità per acquisire crediti extra (CFU) e arricchire il tuo curriculum.</p>
       </div>
 
       <!-- Elenco documenti -->
@@ -298,34 +293,34 @@
         <div class="doc-row">
           <div class="doc-icon">📜</div>
           <div class="doc-info">
-            <h5>Regolamento del Corso di Studi</h5>
-            <p>Norme su esami, propedeuticità e piano di studi (es. LM-31)</p>
+            <h5 data-i18n="documenti.row1Title">Regolamento del Corso di Studi</h5>
+            <p data-i18n="documenti.row1Desc">Norme su esami, propedeuticità e piano di studi (es. LM-31)</p>
           </div>
-          <a href="https://www.lum.it/dipartimento-di-ingegneria/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Consulta →</a>
+          <a href="https://www.lum.it/dipartimento-di-ingegneria/" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-i18n="documenti.row1Btn">Consulta →</a>
         </div>
         <div class="doc-row">
           <div class="doc-icon">⭐</div>
           <div class="doc-info">
-            <h5>Attività Extra e Competenze Trasversali</h5>
-            <p>Regolamento per il riconoscimento di CFU extra (seminari, laboratori, PCTO)</p>
+            <h5 data-i18n="documenti.row2Title">Attività Extra e Competenze Trasversali</h5>
+            <p data-i18n="documenti.row2Desc">Regolamento per il riconoscimento di CFU extra (seminari, laboratori, PCTO)</p>
           </div>
-          <a href="https://www.lum.it/wp-content/uploads/2024/10/regolamento_riconoscimento_crediti_formativi_-ulteriori_attivita_libera_scelta_modulo.pdf" class="btn btn-outline btn-sm js-document-modal" data-doc-title="Attività Extra e Competenze Trasversali" data-doc-action="Consulta documento">Consulta →</a>
+          <a href="https://www.lum.it/wp-content/uploads/2024/10/regolamento_riconoscimento_crediti_formativi_-ulteriori_attivita_libera_scelta_modulo.pdf" class="btn btn-outline btn-sm js-document-modal" data-doc-title="Attività Extra e Competenze Trasversali" data-doc-action="Consulta documento" data-i18n="documenti.row2Btn">Consulta →</a>
         </div>
         <div class="doc-row">
           <div class="doc-icon">📖</div>
           <div class="doc-info">
-            <h5>Calendario Esami</h5>
-            <p>Dettaglio delle sessioni e dei docenti per ogni corso</p>
+            <h5 data-i18n="documenti.row3Title">Calendario Esami</h5>
+            <p data-i18n="documenti.row3Desc">Dettaglio delle sessioni e dei docenti per ogni corso</p>
           </div>
-          <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnLS5NOpJTf7nityhgLo5Fr9yyAOSHynuMlM2x7Cnsm_ojLeS5RyKmwrEqYJVF-HAnfnCD-ta2oMLg/pubhtml" class="btn btn-outline btn-sm js-document-modal" data-doc-title="Calendario Esami" data-doc-action="Apri foglio">Consulta →</a>
+          <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnLS5NOpJTf7nityhgLo5Fr9yyAOSHynuMlM2x7Cnsm_ojLeS5RyKmwrEqYJVF-HAnfnCD-ta2oMLg/pubhtml" class="btn btn-outline btn-sm js-document-modal" data-doc-title="Calendario Esami" data-doc-action="Apri foglio" data-i18n="documenti.row3Btn">Consulta →</a>
         </div>
         <div class="doc-row">
           <div class="doc-icon">🎓</div>
           <div class="doc-info">
-            <h5>Regolamento Prove Finali</h5>
-            <p>Disposizioni procedurali per la tesi e la laurea</p>
+            <h5 data-i18n="documenti.row4Title">Regolamento Prove Finali</h5>
+            <p data-i18n="documenti.row4Desc">Disposizioni procedurali per la tesi e la laurea</p>
           </div>
-          <a href="https://www.lum.it/sedute-di-laurea-informazioni-modulistica-e-date-ing/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Consulta →</a>
+          <a href="https://www.lum.it/sedute-di-laurea-informazioni-modulistica-e-date-ing/" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-i18n="documenti.row4Btn">Consulta →</a>
         </div>
       </div>
 
@@ -333,14 +328,14 @@
         <div class="doc-box doc-box-cv">
           <div class="doc-box-header">
             <span class="doc-box-icon">🌟</span>
-            <h3>Arricchisci il tuo CV</h3>
+            <h3 data-i18n="documenti.boxTitle">Arricchisci il tuo CV</h3>
           </div>
-          <p>Opportunità per acquisire CFU extra e competenze trasversali spendibili nel mondo del lavoro.</p>
+          <p data-i18n="documenti.boxDesc">Opportunità per acquisire CFU extra e competenze trasversali spendibili nel mondo del lavoro.</p>
           <ul class="doc-box-list">
-            <li>🔬 <a href="https://www.lum.it/eventi/?filter_cat=7699" target="_blank" rel="noopener">Seminari e Workshop</a> – 2 CFU (FameLab, Open Lecture Digital Human &amp; AI)</li>
-            <li>🏭 <a href="https://www.lum.it/job-opportunities/" target="_blank" rel="noopener">Tirocini in Azienda</a> – 6/15 CFU (magistrale)</li>
-            <li>🧪 <a href="https://www.lum.it/lumascolta/" target="_blank" rel="noopener">Laboratori Specializzati</a> – LumAscolta - L.O.V. Lab e Teaching Center (TCLLL)</li>
-            <li>📰 <a href="https://www.lum.it/eventi/" target="_blank" rel="noopener">Bacheca News ed Eventi imminenti →</a></li>
+            <li data-i18n-html="documenti.boxItem1Html">🔬 <a href="https://www.lum.it/eventi/?filter_cat=7699" target="_blank" rel="noopener">Seminari e Workshop</a> – 2 CFU (FameLab, Open Lecture Digital Human &amp; AI)</li>
+            <li data-i18n-html="documenti.boxItem2Html">🏭 <a href="https://www.lum.it/job-opportunities/" target="_blank" rel="noopener">Tirocini in Azienda</a> – 6/15 CFU (magistrale)</li>
+            <li data-i18n-html="documenti.boxItem3Html">🧪 <a href="https://www.lum.it/lumascolta/" target="_blank" rel="noopener">Laboratori Specializzati</a> – LumAscolta - L.O.V. Lab e Teaching Center (TCLLL)</li>
+            <li data-i18n-html="documenti.boxItem4Html">📰 <a href="https://www.lum.it/eventi/" target="_blank" rel="noopener">Bacheca News ed Eventi imminenti →</a></li>
           </ul>
         </div>
       </div>
@@ -352,19 +347,19 @@
     <div class="stats-inner">
       <div>
         <div class="stat-number">500+</div>
-        <div class="stat-label">Studenti iscritti</div>
+        <div class="stat-label" data-i18n="stats.stat1Label">Studenti iscritti</div>
       </div>
       <div>
         <div class="stat-number">50+</div>
-        <div class="stat-label">Docenti e ricercatori</div>
+        <div class="stat-label" data-i18n="stats.stat2Label">Docenti e ricercatori</div>
       </div>
       <div>
         <div class="stat-number">30+</div>
-        <div class="stat-label">Progetti di ricerca attivi</div>
+        <div class="stat-label" data-i18n="stats.stat3Label">Progetti di ricerca attivi</div>
       </div>
       <div>
         <div class="stat-number">25+</div>
-        <div class="stat-label">Anni di eccellenza</div>
+        <div class="stat-label" data-i18n="stats.stat4Label">Anni di eccellenza</div>
       </div>
     </div>
   </div>
@@ -373,42 +368,42 @@
   <section class="news-section" id="news">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-badge">News &amp; Eventi</span>
-        <h2>Vita del Dipartimento</h2>
-        <p>Workshop, open lecture e progetti che dimostrano la vivacità del nostro percorso accademico.</p>
+        <span class="section-badge" data-i18n-html="news.badge">News &amp; Eventi</span>
+        <h2 data-i18n="news.title">Vita del Dipartimento</h2>
+        <p data-i18n="news.desc">Workshop, open lecture e progetti che dimostrano la vivacità del nostro percorso accademico.</p>
       </div>
       <div class="news-grid">
         <div class="news-card">
           <div class="news-card-header">
-            <span class="news-badge">Workshop</span>
-            <span class="news-date">Aprile 2026</span>
+            <span class="news-badge" data-i18n="news.card1Badge">Workshop</span>
+            <span class="news-date" data-i18n="news.card1Date">Aprile 2026</span>
           </div>
           <div class="news-card-body">
-            <h4>FameLab Bari – Comunicare la Scienza</h4>
-            <p>I nostri studenti partecipano alla competizione internazionale FameLab, imparando a comunicare la ricerca ingegneristica in soli 3 minuti.</p>
-            <a href="https://www.lum.it/eventi/" target="_blank" rel="noopener" class="news-link">Scopri l'evento →</a>
+            <h4 data-i18n="news.card1Title">FameLab Bari – Comunicare la Scienza</h4>
+            <p data-i18n="news.card1Desc">I nostri studenti partecipano alla competizione internazionale FameLab, imparando a comunicare la ricerca ingegneristica in soli 3 minuti.</p>
+            <a href="https://www.lum.it/eventi/" target="_blank" rel="noopener" class="news-link" data-i18n="news.card1Link">Scopri l'evento →</a>
           </div>
         </div>
         <div class="news-card">
           <div class="news-card-header">
-            <span class="news-badge">Open Lecture</span>
-            <span class="news-date">Marzo 2026</span>
+            <span class="news-badge" data-i18n="news.card2Badge">Open Lecture</span>
+            <span class="news-date" data-i18n="news.card2Date">Marzo 2026</span>
           </div>
           <div class="news-card-body">
-            <h4>Digital Human &amp; AI – Il Futuro dell'Interazione</h4>
-            <p>Conferenza aperta sulle frontiere dell'Intelligenza Artificiale applicata alla simulazione di comportamenti umani digitali e alla transizione 4.0.</p>
-            <a href="https://www.lum.it/eventi/" target="_blank" rel="noopener" class="news-link">Scopri l'evento →</a>
+            <h4 data-i18n-html="news.card2Title">Digital Human &amp; AI – Il Futuro dell'Interazione</h4>
+            <p data-i18n="news.card2Desc">Conferenza aperta sulle frontiere dell'Intelligenza Artificiale applicata alla simulazione di comportamenti umani digitali e alla transizione 4.0.</p>
+            <a href="https://www.lum.it/eventi/" target="_blank" rel="noopener" class="news-link" data-i18n="news.card2Link">Scopri l'evento →</a>
           </div>
         </div>
         <div class="news-card">
           <div class="news-card-header">
-            <span class="news-badge">Progetto</span>
-            <span class="news-date">2025–2026</span>
+            <span class="news-badge" data-i18n="news.card3Badge">Progetto</span>
+            <span class="news-date" data-i18n="news.card3Date">2025–2026</span>
           </div>
           <div class="news-card-body">
-            <h4>Smart District 4.0 – LUM Enterprise</h4>
-            <p>Case study in Ingegneria Gestionale: il progetto Smart District 4.0 connette studenti e imprese del territorio in un laboratorio di innovazione industriale.</p>
-            <a href="https://www.lum.it/strutture-di-ricerca/" target="_blank" rel="noopener" class="news-link">Scopri il progetto →</a>
+            <h4 data-i18n="news.card3Title">Smart District 4.0 – LUM Enterprise</h4>
+            <p data-i18n="news.card3Desc">Case study in Ingegneria Gestionale: il progetto Smart District 4.0 connette studenti e imprese del territorio in un laboratorio di innovazione industriale.</p>
+            <a href="https://www.lum.it/strutture-di-ricerca/" target="_blank" rel="noopener" class="news-link" data-i18n="news.card3Link">Scopri il progetto →</a>
           </div>
         </div>
       </div>
@@ -419,51 +414,49 @@
   <section class="research-section" id="ricerca">
     <div class="research-grid">
       <div class="research-content">
-        <span class="section-badge section-badge-dark">Ricerca e Sviluppo</span>
-        <h2>Pionieri dell'innovazione ingegneristica</h2>
-        <p>Il nostro dipartimento affronta le sfide tecnologiche del futuro:
-           dalla sostenibilità all'intelligenza artificiale, dalle smart city
-           alle energie rinnovabili.</p>
+        <span class="section-badge section-badge-dark" data-i18n="research.badge">Ricerca e Sviluppo</span>
+        <h2 data-i18n="research.title">Pionieri dell'innovazione ingegneristica</h2>
+        <p data-i18n="research.desc">Il nostro dipartimento affronta le sfide tecnologiche del futuro: dalla sostenibilità all'intelligenza artificiale, dalle smart city alle energie rinnovabili.</p>
         <div class="tag-cloud">
-          <span class="tag">Intelligenza Artificiale</span>
-          <span class="tag">Ingegneria Bio Medicale</span>
-          <span class="tag">Sostenibilità</span>
-          <span class="tag">IoT</span>
-          <span class="tag">Automazione</span>
-          <span class="tag">Smart Cities</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">Energie Rinnovabili</span>
+          <span class="tag" data-i18n="research.tag1">Intelligenza Artificiale</span>
+          <span class="tag" data-i18n="research.tag2">Ingegneria Bio Medicale</span>
+          <span class="tag" data-i18n="research.tag3">Sostenibilità</span>
+          <span class="tag" data-i18n="research.tag4">IoT</span>
+          <span class="tag" data-i18n="research.tag5">Automazione</span>
+          <span class="tag" data-i18n="research.tag6">Smart Cities</span>
+          <span class="tag" data-i18n="research.tag7">Machine Learning</span>
+          <span class="tag" data-i18n="research.tag8">Energie Rinnovabili</span>
         </div>
-        <a href="https://www.lum.it/strutture-di-ricerca/" target="_blank" rel="noopener" class="btn btn-primary">Scopri di più</a>
+        <a href="https://www.lum.it/strutture-di-ricerca/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="research.btnMore">Scopri di più</a>
       </div>
 
       <div class="research-cards">
         <div class="research-card">
           <div class="research-card-icon">🤖</div>
           <div>
-            <h4>Intelligenza Artificiale</h4>
-            <p>Ricerca applicata in Machine Learning e AI</p>
+            <h4 data-i18n="research.card1Title">Intelligenza Artificiale</h4>
+            <p data-i18n="research.card1Desc">Ricerca applicata in Machine Learning e AI</p>
           </div>
         </div>
         <div class="research-card">
           <div class="research-card-icon">⚡</div>
           <div>
-            <h4>Energie Rinnovabili</h4>
-            <p>Soluzioni innovative per un futuro sostenibile</p>
+            <h4 data-i18n="research.card2Title">Energie Rinnovabili</h4>
+            <p data-i18n="research.card2Desc">Soluzioni innovative per un futuro sostenibile</p>
           </div>
         </div>
         <div class="research-card">
           <div class="research-card-icon">🏗️</div>
           <div>
-            <h4>Ingegneria Civile</h4>
-            <p>Infrastrutture e urbanistica moderna</p>
+            <h4 data-i18n="research.card3Title">Ingegneria Civile</h4>
+            <p data-i18n="research.card3Desc">Infrastrutture e urbanistica moderna</p>
           </div>
         </div>
         <div class="research-card">
           <div class="research-card-icon">📡</div>
           <div>
-            <h4>Internet of Things</h4>
-            <p>Sistemi connessi e smart environment</p>
+            <h4 data-i18n="research.card4Title">Internet of Things</h4>
+            <p data-i18n="research.card4Desc">Sistemi connessi e smart environment</p>
           </div>
         </div>
       </div>
@@ -474,9 +467,9 @@
   <section class="social-section" id="social">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-badge">Comunicazione Sociale</span>
-        <h2>Resta connesso con la community</h2>
-        <p>Segui il Dipartimento sui nostri canali social e unisciti alla Community of Practice Ingegneria per condividere idee, risorse e opportunità.</p>
+        <span class="section-badge" data-i18n="social.badge">Comunicazione Sociale</span>
+        <h2 data-i18n="social.title">Resta connesso con la community</h2>
+        <p data-i18n="social.desc">Segui il Dipartimento sui nostri canali social e unisciti alla Community of Practice Ingegneria per condividere idee, risorse e opportunità.</p>
       </div>
 
       <div class="social-grid">
@@ -485,13 +478,13 @@
         <a href="https://chat.whatsapp.com/JbW7mbFSCeEGToMg8Ty7Cj" class="social-card social-card-cop" target="_blank" rel="noopener">
           <div class="social-card-icon">🤝</div>
           <div class="social-card-body">
-            <h3>Community of Practice Ingegneria</h3>
-            <p>Uno spazio collaborativo su WhatsApp per studenti, docenti e professionisti. Condividi esperienze, partecipa a discussioni tecniche e costruisci la tua rete professionale.</p>
+            <h3 data-i18n="social.copTitle">Community of Practice Ingegneria</h3>
+            <p data-i18n="social.copDesc">Uno spazio collaborativo su WhatsApp per studenti, docenti e professionisti. Condividi esperienze, partecipa a discussioni tecniche e costruisci la tua rete professionale.</p>
             <div class="cop-qr-wrap">
-              <img src="qr-whatsapp.png" alt="QR Code – Gruppo WhatsApp Community of Practice Ingegneria LUM" class="cop-qr">
-              <span class="cop-qr-hint">Inquadra il QR con WhatsApp</span>
+              <img src="qr-whatsapp.png" alt="QR Code – Gruppo WhatsApp Community of Practice Ingegneria LUM" data-i18n-attr='{"alt":"social.copQrAlt"}' class="cop-qr">
+              <span class="cop-qr-hint" data-i18n="social.copQrHint">Inquadra il QR con WhatsApp</span>
             </div>
-            <span class="social-cta">Unisciti al gruppo →</span>
+            <span class="social-cta" data-i18n="social.copCta">Unisciti al gruppo →</span>
           </div>
         </a>
 
@@ -499,9 +492,9 @@
         <a href="https://www.instagram.com/dipartimento_ingegneria_lum/" class="social-card social-card-instagram" target="_blank" rel="noopener">
           <div class="social-card-icon">📸</div>
           <div class="social-card-body">
-            <h3>Instagram</h3>
-            <p>Foto, storie e aggiornamenti sulla vita universitaria, eventi del dipartimento e progetti degli studenti.</p>
-            <span class="social-cta">Seguici su Instagram →</span>
+            <h3 data-i18n="social.igTitle">Instagram</h3>
+            <p data-i18n="social.igDesc">Foto, storie e aggiornamenti sulla vita universitaria, eventi del dipartimento e progetti degli studenti.</p>
+            <span class="social-cta" data-i18n="social.igCta">Seguici su Instagram →</span>
           </div>
         </a>
 
@@ -509,9 +502,9 @@
         <a href="https://www.linkedin.com/company/dipartimento-ingegneria-lum/" class="social-card social-card-linkedin" target="_blank" rel="noopener">
           <div class="social-card-icon">💼</div>
           <div class="social-card-body">
-            <h3>LinkedIn</h3>
-            <p>News accademiche, opportunità di carriera, alumni e collaborazioni con il mondo del lavoro e dell'industria.</p>
-            <span class="social-cta">Connettiti su LinkedIn →</span>
+            <h3 data-i18n="social.liTitle">LinkedIn</h3>
+            <p data-i18n="social.liDesc">News accademiche, opportunità di carriera, alumni e collaborazioni con il mondo del lavoro e dell'industria.</p>
+            <span class="social-cta" data-i18n="social.liCta">Connettiti su LinkedIn →</span>
           </div>
         </a>
 
@@ -519,9 +512,9 @@
         <a href="https://www.youtube.com/@DipartimentoIngegneriaLUM" class="social-card social-card-youtube" target="_blank" rel="noopener">
           <div class="social-card-icon">▶️</div>
           <div class="social-card-body">
-            <h3>YouTube</h3>
-            <p>Lezioni, seminari, eventi e webinar registrati. Tutto il sapere del dipartimento a portata di click.</p>
-            <span class="social-cta">Guarda i video →</span>
+            <h3 data-i18n="social.ytTitle">YouTube</h3>
+            <p data-i18n="social.ytDesc">Lezioni, seminari, eventi e webinar registrati. Tutto il sapere del dipartimento a portata di click.</p>
+            <span class="social-cta" data-i18n="social.ytCta">Guarda i video →</span>
           </div>
         </a>
 
@@ -533,18 +526,18 @@
   <section class="feed-section" id="feed">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-badge">📱 Ultime dal Dipartimento</span>
-        <h2>Live dai nostri canali</h2>
-        <p>Reel, aggiornamenti e novità direttamente da Instagram e LinkedIn.</p>
+        <span class="section-badge" data-i18n="feed.badge">📱 Ultime dal Dipartimento</span>
+        <h2 data-i18n="feed.title">Live dai nostri canali</h2>
+        <p data-i18n="feed.desc">Reel, aggiornamenti e novità direttamente da Instagram e LinkedIn.</p>
       </div>
 
       <!-- ── Instagram Reels ─── -->
       <div class="feed-block">
         <div class="feed-block-header feed-block-instagram">
-          <span>📸 Instagram Reels</span>
+          <span data-i18n="feed.igHeader">📸 Instagram Reels</span>
           <a href="https://www.instagram.com/dipartimento_ingegneria_lum/"
              target="_blank" rel="noopener" data-modal-direct="true"
-             class="feed-view-all">Segui @dipartimento_ingegneria_lum →</a>
+             class="feed-view-all" data-i18n="feed.igViewAll">Segui @dipartimento_ingegneria_lum →</a>
         </div>
         <div class="feed-reels-row">
           <!--
@@ -558,12 +551,12 @@
             <div class="feed-reel-ph">
               <div class="feed-reel-ph-inner">
                 <span class="feed-reel-ph-icon">🎬</span>
-                <strong>Reel #1</strong>
+                <strong data-i18n="feed.reel1">Reel #1</strong>
                 <span> <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DXpUKvwiNLk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DXpUKvwiNLk/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Visualizza questo post su Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DXpUKvwiNLk/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Un post condiviso da Dipartimento Ingegneria LUM (@dipartimento_ingegneria_lum)</a></p></div></blockquote>
 <script async src="//www.instagram.com/embed.js"></script></span>
                 <a href="https://www.instagram.com/dipartimento_ingegneria_lum/"
                    target="_blank" rel="noopener" data-modal-direct="true"
-                   class="feed-reel-ph-link">Vai al profilo →</a>
+                   class="feed-reel-ph-link" data-i18n="feed.goToProfile">Vai al profilo →</a>
               </div>
             </div>
           </div>
@@ -571,12 +564,12 @@
             <div class="feed-reel-ph">
               <div class="feed-reel-ph-inner">
                 <span class="feed-reel-ph-icon">🎬</span>
-                <strong>Reel #2</strong>
+                <strong data-i18n="feed.reel2">Reel #2</strong>
                 <span><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DUQ86eNgBI9/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DUQ86eNgBI9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Visualizza questo post su Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DUQ86eNgBI9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Un post condiviso da Dipartimento Ingegneria LUM (@dipartimento_ingegneria_lum)</a></p></div></blockquote>
 <script async src="//www.instagram.com/embed.js"></script></span>
                 <a href="https://www.instagram.com/dipartimento_ingegneria_lum/"
                    target="_blank" rel="noopener" data-modal-direct="true"
-                   class="feed-reel-ph-link">Vai al profilo →</a>
+                   class="feed-reel-ph-link" data-i18n="feed.goToProfile">Vai al profilo →</a>
               </div>
             </div>
           </div>
@@ -584,12 +577,12 @@
             <div class="feed-reel-ph">
               <div class="feed-reel-ph-inner">
                 <span class="feed-reel-ph-icon">🎬</span>
-                <strong>Reel #3</strong>
+                <strong data-i18n="feed.reel3">Reel #3</strong>
                 <span> <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DXW24g1CEQK/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DXW24g1CEQK/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Visualizza questo post su Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DXW24g1CEQK/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Un post condiviso da Dipartimento Ingegneria LUM (@dipartimento_ingegneria_lum)</a></p></div></blockquote>
 <script async src="//www.instagram.com/embed.js"></script> </span>
                 <a href="https://www.instagram.com/dipartimento_ingegneria_lum/"
                    target="_blank" rel="noopener" data-modal-direct="true"
-                   class="feed-reel-ph-link">Vai al profilo →</a>
+                   class="feed-reel-ph-link" data-i18n="feed.goToProfile">Vai al profilo →</a>
               </div>
             </div>
           </div>
@@ -599,10 +592,10 @@
       <!-- ── LinkedIn ─── -->
       <div class="feed-block">
         <div class="feed-block-header feed-block-linkedin">
-          <span>💼 LinkedIn</span>
+          <span data-i18n="feed.liHeader">💼 LinkedIn</span>
           <a href="https://www.linkedin.com/company/dipartimento-ingegneria-lum/"
              target="_blank" rel="noopener" data-modal-direct="true"
-             class="feed-view-all">Segui la pagina →</a>
+             class="feed-view-all" data-i18n="feed.liViewAll">Segui la pagina →</a>
         </div>
         <div class="feed-linkedin-grid">
           <a href="https://www.linkedin.com/company/dipartimento-ingegneria-lum/"
@@ -610,24 +603,24 @@
             <div class="feed-li-card-header">
               <span class="feed-li-card-icon">🏛️</span>
               <div>
-                <strong>Dipartimento di Ingegneria</strong>
-                <span>LUM University</span>
+                <strong data-i18n="feed.liCard1Name">Dipartimento di Ingegneria</strong>
+                <span data-i18n="feed.liCard1Sub">LUM University</span>
               </div>
             </div>
-            <p>News accademiche, opportunità di carriera, alumni e collaborazioni con il mondo del lavoro e dell'industria.</p>
-            <span class="feed-li-cta">Connettiti su LinkedIn →</span>
+            <p data-i18n="feed.liCard1Desc">News accademiche, opportunità di carriera, alumni e collaborazioni con il mondo del lavoro e dell'industria.</p>
+            <span class="feed-li-cta" data-i18n="feed.liCard1Cta">Connettiti su LinkedIn →</span>
           </a>
           <a href="https://www.linkedin.com/company/dipartimento-ingegneria-lum/posts/"
              class="feed-li-card" target="_blank" rel="noopener" data-modal-direct="true">
             <div class="feed-li-card-header">
               <span class="feed-li-card-icon">📢</span>
               <div>
-                <strong>Ultime Notizie</strong>
-                <span>Post e Aggiornamenti</span>
+                <strong data-i18n="feed.liCard2Name">Ultime Notizie</strong>
+                <span data-i18n="feed.liCard2Sub">Post e Aggiornamenti</span>
               </div>
             </div>
-            <p>Seguici per restare aggiornato su eventi, ricerca, tirocini e opportunità per gli studenti di Ingegneria LUM.</p>
-            <span class="feed-li-cta">Leggi gli aggiornamenti →</span>
+            <p data-i18n="feed.liCard2Desc">Seguici per restare aggiornato su eventi, ricerca, tirocini e opportunità per gli studenti di Ingegneria LUM.</p>
+            <span class="feed-li-cta" data-i18n="feed.liCard2Cta">Leggi gli aggiornamenti →</span>
           </a>
         </div>
       </div>
@@ -643,46 +636,43 @@
           <div class="footer-brand-area">
             <img src="icon-192x192.png" alt="LUM Logo" class="footer-logo">
             <div>
-              <div class="footer-brand-name">Dipartimento di Ingegneria</div>
-              <div class="footer-brand-sub">Università Giuseppe Degennaro</div>
+              <div class="footer-brand-name" data-i18n="footer.brandName">Dipartimento di Ingegneria</div>
+              <div class="footer-brand-sub" data-i18n="footer.brandSub">Università Giuseppe Degennaro</div>
             </div>
           </div>
-          <p class="footer-desc">
-            Formiamo ingegneri pronti ad affrontare le sfide del mondo moderno
-            attraverso ricerca, innovazione e didattica di qualità.
-          </p>
+          <p class="footer-desc" data-i18n="footer.desc">Formiamo ingegneri pronti ad affrontare le sfide del mondo moderno attraverso ricerca, innovazione e didattica di qualità.</p>
         </div>
 
         <div class="footer-col">
-          <h4>Dipartimento</h4>
+          <h4 data-i18n="footer.col1Title">Dipartimento</h4>
           <ul>
-            <li><a href="#chi-siamo">Chi Siamo</a></li>
-            <li><a href="#corsi">Corsi di Laurea</a></li>
-            <li><a href="#ricerca">Ricerca</a></li>
-            <li><a href="#documenti">Documenti</a></li>
-            <li><a href="#social">Comunità</a></li>
-            <li><a href="#assistente">Assistente Virtuale</a></li>
+            <li><a href="#chi-siamo" data-i18n="footer.col1Link1">Chi Siamo</a></li>
+            <li><a href="#corsi" data-i18n="footer.col1Link2">Corsi di Laurea</a></li>
+            <li><a href="#ricerca" data-i18n="footer.col1Link3">Ricerca</a></li>
+            <li><a href="#documenti" data-i18n="footer.col1Link4">Documenti</a></li>
+            <li><a href="#social" data-i18n="footer.col1Link5">Comunità</a></li>
+            <li><a href="#assistente" data-i18n="footer.col1Link6">Assistente Virtuale</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Contatti</h4>
+          <h4 data-i18n="footer.col2Title">Contatti</h4>
           <ul>
-            <li>Casamassima (BA)</li>
-            <li>Puglia, Italia</li>
-            <li><a href="#assistente">Scrivici tramite il bot →</a></li>
+            <li data-i18n="footer.col2Addr1">Casamassima (BA)</li>
+            <li data-i18n="footer.col2Addr2">Puglia, Italia</li>
+            <li><a href="#assistente" data-i18n="footer.col2Bot">Scrivici tramite il bot →</a></li>
           </ul>
           <div class="segreteria-hours">
-            <strong>Orari Segreteria</strong><br>
-            Lun – Ven: 9:00 – 13:00<br>
-            Mar – Gio: 15:00 – 18:00
+            <strong data-i18n="footer.segHours">Orari Segreteria</strong><br>
+            <span data-i18n="footer.segTime1">Lun – Ven: 9:00 – 13:00</span><br>
+            <span data-i18n="footer.segTime2">Mar – Gio: 15:00 – 18:00</span>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <span>© 2026 Università Giuseppe Degennaro – Dipartimento di Ingegneria. Tutti i diritti riservati.</span>
-        <span class="footer-badge">🌿 Powered by Team Ingenium / Dr. Ing. Demetrio Alessandro Trunfio</span>
+        <span data-i18n="footer.copyright">© 2026 Università Giuseppe Degennaro – Dipartimento di Ingegneria. Tutti i diritti riservati.</span>
+        <span class="footer-badge" data-i18n="footer.badge">🌿 Powered by Team Ingenium / Dr. Ing. Demetrio Alessandro Trunfio</span>
       </div>
     </div>
   </footer>
@@ -693,41 +683,41 @@
   <!-- ── Off-canvas: Chi Siamo ──────────────────────────── -->
   <aside class="offcanvas" id="panel-chi-siamo" role="dialog" aria-label="Chi Siamo">
     <div class="offcanvas-header">
-      <h3>Il Dipartimento</h3>
-      <button class="close-btn" onclick="closeAll()" aria-label="Chiudi pannello">✕</button>
+      <h3 data-i18n="offcanvas.title">Il Dipartimento</h3>
+      <button class="close-btn" onclick="closeAll()" data-i18n-attr='{"aria-label":"modal.closePanelLabel"}' aria-label="Chiudi pannello">✕</button>
     </div>
     <div class="offcanvas-body">
       <div class="offcanvas-director">
         <div class="offcanvas-director-icon">👨‍🏫</div>
         <div>
-          <h5>Prof. Giovanni Schiuma</h5>
-          <p>Direttore del Dipartimento di Ingegneria</p>
-          <h5>Prof. Pasquale Del Vecchio</h5>
-          <p>Coordinatore Ingegneria Gestionale L9</p>
-          <h5>Prof. Giuseppe Loseto</h5>
-          <p>Coordinatore Ingegneria Informatica/Bio Medicale L8</p>
-          <h5>Prof.ssa Giustina Secundo</h5>
-          <p>Coordinatore Ingegneria Gestionale LM31</p>
+          <h5 data-i18n="offcanvas.director1Name">Prof. Giovanni Schiuma</h5>
+          <p data-i18n="offcanvas.director1Role">Direttore del Dipartimento di Ingegneria</p>
+          <h5 data-i18n="offcanvas.director2Name">Prof. Pasquale Del Vecchio</h5>
+          <p data-i18n="offcanvas.director2Role">Coordinatore Ingegneria Gestionale L9</p>
+          <h5 data-i18n="offcanvas.director3Name">Prof. Giuseppe Loseto</h5>
+          <p data-i18n="offcanvas.director3Role">Coordinatore Ingegneria Informatica/Bio Medicale L8</p>
+          <h5 data-i18n="offcanvas.director4Name">Prof.ssa Giustina Secundo</h5>
+          <p data-i18n="offcanvas.director4Role">Coordinatore Ingegneria Gestionale LM31</p>
         </div>
       </div>
-      <p>Il <strong>Dipartimento di Ingegneria</strong> dell'Università LUM Giuseppe Degennaro è un centro di eccellenza che forma ingegneri capaci di affrontare le sfide tecnologiche e gestionali del XXI secolo.</p>
-      <p>Il percorso formativo integra rigore scientifico, innovazione digitale e una forte connessione con il tessuto imprenditoriale del territorio, con particolare attenzione all'<strong>Ingegneria Gestionale, Bio Medica e Informatica per la Transizione Digitale</strong>.</p>
-      <h4>🎯 Missione</h4>
-      <p>Formare professionisti con solide competenze tecniche e manageriali, pronti a guidare processi di trasformazione digitale e sostenibile nelle imprese e nelle istituzioni.</p>
-      <h4>🔬 Strutture di Ricerca</h4>
-      <p>Il Dipartimento ospita osservatori e laboratori attivi tra cui l'<strong>Osservatorio sulle Crisi d'Impresa</strong> e l'<strong>Osservatorio sul Digitale</strong>, con collaborazioni nazionali e internazionali.</p>
-      <h4>🌍 Programma Erasmus+</h4>
-      <p>Accordi con università partner in tutta Europa per periodi di studio e tirocinio all'estero, aperti a tutti gli studenti iscritti.</p>
-      <a href="https://www.lum.it/dipartimento-di-ingegneria/" target="_blank" rel="noopener" class="btn btn-green" style="margin-top:.5rem;">Visita il sito ufficiale →</a>
+      <p data-i18n-html="offcanvas.p1Html">Il <strong>Dipartimento di Ingegneria</strong> dell'Università LUM Giuseppe Degennaro è un centro di eccellenza che forma ingegneri capaci di affrontare le sfide tecnologiche e gestionali del XXI secolo.</p>
+      <p data-i18n-html="offcanvas.p2Html">Il percorso formativo integra rigore scientifico, innovazione digitale e una forte connessione con il tessuto imprenditoriale del territorio, con particolare attenzione all'<strong>Ingegneria Gestionale, Bio Medica e Informatica per la Transizione Digitale</strong>.</p>
+      <h4 data-i18n="offcanvas.missionTitle">🎯 Missione</h4>
+      <p data-i18n="offcanvas.missionDesc">Formare professionisti con solide competenze tecniche e manageriali, pronti a guidare processi di trasformazione digitale e sostenibile nelle imprese e nelle istituzioni.</p>
+      <h4 data-i18n="offcanvas.ricercaTitle">🔬 Strutture di Ricerca</h4>
+      <p data-i18n-html="offcanvas.ricercaDescHtml">Il Dipartimento ospita osservatori e laboratori attivi tra cui l'<strong>Osservatorio sulle Crisi d'Impresa</strong> e l'<strong>Osservatorio sul Digitale</strong>, con collaborazioni nazionali e internazionali.</p>
+      <h4 data-i18n="offcanvas.erasmusTitle">🌍 Programma Erasmus+</h4>
+      <p data-i18n="offcanvas.erasmusDesc">Accordi con università partner in tutta Europa per periodi di studio e tirocinio all'estero, aperti a tutti gli studenti iscritti.</p>
+      <a href="https://www.lum.it/dipartimento-di-ingegneria/" target="_blank" rel="noopener" class="btn btn-green" style="margin-top:.5rem;" data-i18n="offcanvas.officialBtn">Visita il sito ufficiale →</a>
     </div>
   </aside>
 
   <!-- ── Modal: Anteprima Documento ───────────────────── -->
-  <div class="modal" id="modal-corsi" role="dialog" aria-label="Anteprima link">
+  <div class="modal" id="modal-corsi" role="dialog" data-i18n-attr='{"aria-label":"modal.docModalLabel"}' aria-label="Anteprima link">
     <div class="modal-dialog">
       <div class="modal-header">
-        <h3 id="document-modal-title">🔗 Anteprima link</h3>
-        <button class="close-btn" onclick="closeAll()" aria-label="Chiudi modale">✕</button>
+        <h3 id="document-modal-title" data-i18n="modal.docTitle">🔗 Anteprima link</h3>
+        <button class="close-btn" onclick="closeAll()" data-i18n-attr='{"aria-label":"modal.closeModalLabel"}' aria-label="Chiudi modale">✕</button>
       </div>
       <div class="modal-body">
         <iframe
@@ -738,17 +728,17 @@
         ></iframe>
       </div>
       <div class="modal-footer">
-        <p class="modal-note" id="document-modal-note">Apri il link nella finestra sovrapposta.</p>
-        <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" target="_blank" rel="noopener" data-modal-direct="true" class="btn btn-green" id="document-modal-action">Apri link</a>
+        <p class="modal-note" id="document-modal-note" data-i18n="modal.docNote">Apri il link nella finestra sovrapposta.</p>
+        <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" target="_blank" rel="noopener" data-modal-direct="true" class="btn btn-green" id="document-modal-action" data-i18n="modal.docAction">Apri link</a>
       </div>
     </div>
   </div>
 
   <!-- ── Modal: Social Preview ────────────────────────────── -->
-  <div class="modal" id="modal-social" role="dialog" aria-label="Profilo Social">
+  <div class="modal" id="modal-social" role="dialog" data-i18n-attr='{"aria-label":"modal.socialLabel"}' aria-label="Profilo Social">
     <div class="modal-dialog modal-social-dialog">
       <div class="modal-social-banner" id="social-modal-banner">
-        <button class="close-btn modal-social-close" onclick="closeAll()" aria-label="Chiudi modale">✕</button>
+        <button class="close-btn modal-social-close" onclick="closeAll()" data-i18n-attr='{"aria-label":"modal.closeModalLabel"}' aria-label="Chiudi modale">✕</button>
         <div class="modal-social-avatar" id="social-modal-avatar">📸</div>
       </div>
       <div class="modal-social-body">
@@ -767,7 +757,7 @@
 
   <!-- ── Floating: LUM Help ─────────────────────────────── -->
   <a href="https://sites.google.com/lum.it/lumhelp/home" target="_blank" rel="noopener"
-     class="lum-help-float" title="LUM Help – Supporto tecnico e FAQ">
+     class="lum-help-float" data-i18n-attr='{"title":"lumHelpTitle"}' title="LUM Help – Supporto tecnico e FAQ" data-i18n="lumHelp">
     ❓ LUM Help
   </a>
 
@@ -1008,5 +998,6 @@
   <!-- ── Instagram Embed Script (attiva gli embed <blockquote class="instagram-media">) ── -->
   <script async defer src="//www.instagram.com/embed.js"></script>
 
+  <script src="i18n.js" defer></script>
 </body>
 </html>
