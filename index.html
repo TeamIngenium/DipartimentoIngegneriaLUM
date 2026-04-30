@@ -45,9 +45,9 @@
       </button>
       <ul class="nav-links">
         <li><a href="#chi-siamo" onclick="event.preventDefault(); openPanel('panel-chi-siamo');" data-i18n="nav.chiSiamo">Chi Siamo</a></li>
-        <li><a href="#corsi" data-i18n="nav.corsi">Info Corsi</a></li>
+        <li><a href="#corsi" data-i18n="nav.corsi">Corsi di Laurea</a></li>
         <li><a href="#ricerca" data-i18n="nav.ricerca">Ricerca</a></li>
-        <li><a href="#documenti" data-i18n="nav.documenti">Info Utili</a></li>
+        <li><a href="#documenti" data-i18n="nav.documenti">Carriera</a></li>
         <li><a href="#social" data-i18n="nav.social">Comunità</a></li>
         <li><a href="#assistente" class="nav-cta" data-i18n="nav.assistente">Assistente Virtuale</a></li>
         <li class="lang-switcher">
@@ -187,108 +187,93 @@
     </div>
   </section>
 
-  <!-- ── Features Section ───────────────────────────────── -->
+  <!-- ── Corsi di Laurea ───────────────────────────────────── -->
   <section class="features-section" id="corsi">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-badge" data-i18n="features.badge">Cosa Offriamo</span>
-        <h2 data-i18n="features.title">Eccellenza nella Formazione</h2>
-        <p data-i18n="features.desc">Programmi accademici di alto livello, laboratori all'avanguardia e un corpo docenti di eccellenza internazionale.</p>
+        <span class="section-badge" data-i18n="corsi.badge">Scegli il tuo Percorso</span>
+        <h2 data-i18n="corsi.title">Scegli il tuo Percorso in Ingegneria</h2>
+        <p data-i18n="corsi.desc">Quattro percorsi di laurea attivi pensati per formare professionisti pronti ad affrontare le sfide del mondo moderno.</p>
       </div>
-      <div class="features-grid">
-        <div class="feature-card" data-i18n-attr='{"title":"features.card1Tooltip"}' title="Scopri i laboratori e i progetti di ricerca finanziati a livello nazionale ed europeo">
-          <div class="feature-icon">🔬</div>
-          <h3 data-i18n="features.card1Title">Ricerca Avanzata</h3>
-          <p data-i18n="features.card1Desc">Laboratori di ricerca all'avanguardia con progetti finanziati a livello nazionale ed europeo.</p>
-          <a href="https://www.lum.it/strutture-di-ricerca/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card1Btn">Scopri di più →</a>
+      <div class="corsi-grid">
+        <!-- Ingegneria Gestionale L-9 -->
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <span class="course-badge" data-i18n="corsi.course1Badge">Triennale · L-9</span>
+          <h3 data-i18n="corsi.course1Title">Ingegneria Gestionale</h3>
+          <p data-i18n="corsi.course1Desc">Ottimizzazione dei sistemi produttivi e innovazione dei processi aziendali per l'impresa digitale. Il percorso integra competenze tecniche, economiche e giuridiche.</p>
+          <a href="https://www.lum.it/laurea-triennale-ingegneria-gestionale/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="corsi.courseBtn">Vai al Corso →</a>
         </div>
-        <div class="feature-card" data-i18n-attr='{"title":"features.card2Tooltip"}' title="Esplora il nostro approccio digitale e i partner tecnologici orientati a Industria 5.0">
-          <div class="feature-icon">💡</div>
-          <h3 data-i18n="features.card2Title">Innovazione</h3>
-          <p data-i18n="features.card2Desc">Approccio didattico innovativo con tecnologie digitali e metodologie moderne orientate al mercato.</p>
-          <a href="https://www.lumenterprise.it/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card2Btn">Scopri di più →</a>
+        <!-- Ingegneria Informatica per la Transizione Digitale L-8 -->
+        <div class="feature-card">
+          <div class="feature-icon">💻</div>
+          <span class="course-badge" data-i18n="corsi.course2Badge">Triennale · L-8</span>
+          <h3 data-i18n="corsi.course2Title">Ingegneria Informatica per la Transizione Digitale</h3>
+          <p data-i18n="corsi.course2Desc">Intelligenza Artificiale, Machine Learning, IoT e Cybersecurity. Prepara professionisti pronti a guidare la trasformazione tecnologica di aziende e Pubblica Amministrazione.</p>
+          <a href="https://www.lum.it/laurea-triennale-ingegneria-informatica/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="corsi.courseBtn">Vai al Corso →</a>
         </div>
-        <div class="feature-card" data-i18n-attr='{"title":"features.card3Tooltip"}' title="Esplora i programmi Erasmus+ e gli accordi con le università partner in Europa e nel mondo">
-          <div class="feature-icon">🌍</div>
-          <h3 data-i18n="features.card3Title">Internazionalizzazione</h3>
-          <p data-i18n="features.card3Desc">Programmi Erasmus+ e accordi con università partner in tutta Europa e nel mondo.</p>
-          <a href="https://www.lum.it/international-mobility/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card3Btn">Scopri di più →</a>
+        <!-- Ingegneria Biomedica L-8 -->
+        <div class="feature-card">
+          <div class="feature-icon">🏥</div>
+          <span class="course-badge" data-i18n="corsi.course3Badge">Triennale · L-8</span>
+          <h3 data-i18n="corsi.course3Title">Ingegneria Biomedica</h3>
+          <p data-i18n="corsi.course3Desc">Formazione di figure professionali esperte nelle nuove tecnologie applicate al campo biomedico e sanitario. Competenze d'avanguardia per gli approcci diagnostici e terapeutici del futuro.</p>
+          <a href="https://www.lum.it/laurea-triennale-ingegneria-biomedica/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="corsi.courseBtn">Vai al Corso →</a>
         </div>
-        <div class="feature-card" data-i18n-attr='{"title":"features.card4Tooltip"}' title="Trova stage, tirocini e opportunità di lavoro concrete con le imprese del territorio">
-          <div class="feature-icon">🤝</div>
-          <h3 data-i18n="features.card4Title">Imprese Partner</h3>
-          <p data-i18n="features.card4Desc">Forti legami con il territorio e le imprese per stage, tirocini e opportunità di lavoro concrete.</p>
-          <a href="https://www.lum.it/job-opportunities/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card4Btn">Scopri di più →</a>
-        </div>
-        <div class="feature-card" data-i18n-attr='{"title":"features.card5Tooltip"}' title="Consulta l'offerta formativa completa: triennali, magistrali e dottorati 2025/26">
-          <div class="feature-icon">📚</div>
-          <h3 data-i18n="features.card5Title">Corsi di Laurea</h3>
-          <p data-i18n="features.card5Desc">Triennali, magistrali e dottorati di ricerca in diverse discipline dell'ingegneria moderna.</p>
-          <a href="https://www.lum.it/dipartimento-di-ingegneria/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card5Btn">Scopri di più →</a>
-        </div>
-        <div class="feature-card" data-i18n-attr='{"title":"features.card6Tooltip"}' title="Scopri gli accreditamenti internazionali e i premi per la qualità della ricerca del Dipartimento">
-          <div class="feature-icon">🏆</div>
-          <h3 data-i18n="features.card6Title">Riconoscimenti</h3>
-          <p data-i18n="features.card6Desc">Accreditamenti internazionali e premi per la qualità dell'offerta formativa e della ricerca.</p>
-          <a href="https://ingenium.imensa.it/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="features.card6Btn">Scopri di più →</a>
+        <!-- Ingegneria Gestionale LM-31 -->
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <span class="course-badge course-badge-master" data-i18n="corsi.course4Badge">Magistrale · LM-31</span>
+          <h3 data-i18n="corsi.course4Title">Ingegneria Gestionale (Magistrale)</h3>
+          <p data-i18n="corsi.course4Desc">Specializzazione in Industria 5.0, Digital Twin e gestione dell'innovazione. Percorso magistrale focalizzato sull'integrazione tra fattore umano e tecnologie digitali avanzate.</p>
+          <a href="https://www.lum.it/laurea-magistrale-ingegneria-gestionale/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="corsi.courseBtn">Vai al Corso →</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ── Modulistica Quick-Action ──────────────────────── -->
-  <section class="modulistica-section" id="modulistica">
-    <div class="section-container">
-      <div class="section-header">
-        <span class="section-badge" data-i18n="modulistica.badge">Modulistica</span>
-        <h2 data-i18n="modulistica.title">Documenti e Moduli</h2>
-        <p data-i18n="modulistica.desc">Scarica rapidamente i moduli più richiesti dalla segreteria studenti.</p>
-      </div>
-      <div class="modulistica-grid">
-        <div class="modulo-card">
-          <div class="modulo-icon">📋</div>
-          <h4 data-i18n="modulistica.doc1Title">Brochure Dipartimento</h4>
-          <p data-i18n="modulistica.doc1Desc">Scarica la brochure ufficiale del Dipartimento di Ingegneria LUM.</p>
-          <a href="https://www.lum.it/offerte-formative/" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="modulistica.doc1Btn">⬇ Scarica Brochure</a>
-        </div>
-        <div class="modulo-card">
-          <div class="modulo-icon">📚</div>
-          <h4 data-i18n="modulistica.doc2Title">Offerta Formativa 2025/26</h4>
-          <p data-i18n="modulistica.doc2Desc">PDF completo dell'offerta formativa per l'anno accademico 2025/26.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" class="btn btn-outline js-document-modal" data-doc-title="Offerta Formativa 2025/26" data-doc-action="⬇ Scarica PDF" data-i18n="modulistica.doc2Btn">⬇ Scarica PDF</a>
-        </div>
-        <div class="modulo-card">
-          <div class="modulo-icon">📝</div>
-          <h4 data-i18n="modulistica.doc3Title">Iscrizione Anni Successivi</h4>
-          <p data-i18n="modulistica.doc3Desc">Modulo per l'iscrizione agli anni accademici successivi al primo.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2025/06/ISCRIZIONE-ANNI-SUCCESSIVI.pdf" class="btn btn-outline js-document-modal" data-doc-title="Iscrizione Anni Successivi" data-doc-action="⬇ Scarica Modulo" data-i18n="modulistica.doc3Btn">⬇ Scarica Modulo</a>
-        </div>
-        <div class="modulo-card">
-          <div class="modulo-icon">💰</div>
-          <h4 data-i18n="modulistica.doc4Title">Guida Tasse ADISU Puglia</h4>
-          <p data-i18n="modulistica.doc4Desc">Guida aggiornata sulle tasse e i benefici ADISU Puglia per l'a.a. 2025/26.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2025/09/ADISU-TASSE-25-26-aggiornata.pdf" class="btn btn-outline js-document-modal" data-doc-title="Guida Tasse ADISU Puglia" data-doc-action="⬇ Scarica Guida" data-i18n="modulistica.doc4Btn">⬇ Scarica Guida</a>
-        </div>
-        <div class="modulo-card">
-          <div class="modulo-icon">🪪</div>
-          <h4 data-i18n="modulistica.doc5Title">Attivazione Carriera Alias</h4>
-          <p data-i18n="modulistica.doc5Desc">Richiesta per l'attivazione della carriera alias per studenti transgender.</p>
-          <a href="https://www.lum.it/wp-content/uploads/2024/07/All.1-istanza-di-attivazione-carriera-alias-2-1.pdf" class="btn btn-outline js-document-modal" data-doc-title="Attivazione Carriera Alias" data-doc-action="⬇ Scarica Modulo" data-i18n="modulistica.doc5Btn">⬇ Scarica Modulo</a>
+      <!-- Elementi aggiuntivi per la navigazione -->
+      <div class="corsi-nav-area">
+        <span class="corsi-nav-label" data-i18n="corsi.navLabel">📎 Navigazione rapida</span>
+        <div class="corsi-nav-links">
+          <a href="https://www.lum.it/wp-content/uploads/2025/07/OF-25-26-web.pdf" class="btn btn-outline js-document-modal" data-doc-title="Offerta Formativa 2025/26" data-doc-action="⬇ Scarica PDF" data-i18n="corsi.navLink1">📄 Offerta Formativa Completa 2025/26</a>
+          <a href="https://www.lum.it/62469" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="corsi.navLink2">📘 Brochure Generale Ingegneria</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Documenti e Regolamenti ───────────────────────────── -->
+  <!-- ── Carriera e Servizi (Pianificazione Attiva) ────────── -->
   <section class="documenti-section" id="documenti">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-badge" data-i18n="documenti.badge">📄 Documenti e Regolamenti</span>
-        <h2 data-i18n="documenti.title">Pianifica il tuo Percorso</h2>
-        <p data-i18n="documenti.desc">Regolamenti ufficiali e opportunità per acquisire crediti extra (CFU) e arricchire il tuo curriculum.</p>
+        <span class="section-badge" data-i18n="carriera.badge">📋 Carriera e Servizi</span>
+        <h2 data-i18n="carriera.title">Pianificazione Attiva</h2>
+        <p data-i18n="carriera.desc">Tutto ciò che serve per gestire la tua carriera universitaria: moduli, supporto, regolamenti e opportunità internazionali.</p>
       </div>
 
-      <!-- Elenco documenti -->
+      <!-- Sub-sezione: Modulistica -->
+      <h3 class="carriera-sub-heading" data-i18n="carriera.modTitle">📝 Modulistica</h3>
+      <div class="modulistica-grid">
+        <div class="modulo-card">
+          <div class="modulo-icon">📝</div>
+          <h4 data-i18n="carriera.mod1Title">Iscrizione Anni Successivi</h4>
+          <p data-i18n="carriera.mod1Desc">Modulo per l'iscrizione agli anni accademici successivi al primo.</p>
+          <a href="https://www.lum.it/wp-content/uploads/2025/06/ISCRIZIONE-ANNI-SUCCESSIVI.pdf" class="btn btn-outline js-document-modal" data-doc-title="Iscrizione Anni Successivi" data-doc-action="⬇ Scarica Modulo" data-i18n="carriera.mod1Btn">⬇ Scarica Modulo</a>
+        </div>
+        <div class="modulo-card">
+          <div class="modulo-icon">💰</div>
+          <h4 data-i18n="carriera.mod2Title">Guida Tasse ADISU Puglia</h4>
+          <p data-i18n="carriera.mod2Desc">Guida aggiornata sulle tasse e i benefici ADISU Puglia per l'a.a. 2025/26.</p>
+          <a href="https://www.lum.it/wp-content/uploads/2025/09/ADISU-TASSE-25-26-aggiornata.pdf" class="btn btn-outline js-document-modal" data-doc-title="Guida Tasse ADISU Puglia" data-doc-action="⬇ Scarica Guida" data-i18n="carriera.mod2Btn">⬇ Scarica Guida</a>
+        </div>
+        <div class="modulo-card">
+          <div class="modulo-icon">🪪</div>
+          <h4 data-i18n="carriera.mod3Title">Attivazione Carriera Alias</h4>
+          <p data-i18n="carriera.mod3Desc">Richiesta per l'attivazione della carriera alias per studenti transgender.</p>
+          <a href="https://www.lum.it/wp-content/uploads/2024/07/All.1-istanza-di-attivazione-carriera-alias-2-1.pdf" class="btn btn-outline js-document-modal" data-doc-title="Attivazione Carriera Alias" data-doc-action="⬇ Scarica Modulo" data-i18n="carriera.mod3Btn">⬇ Scarica Modulo</a>
+        </div>
+      </div>
+
+      <!-- Sub-sezione: Regolamenti -->
+      <h3 class="carriera-sub-heading" data-i18n="carriera.regTitle">📜 Regolamenti e Calendario</h3>
       <div class="documenti-table">
         <div class="doc-row">
           <div class="doc-icon">📜</div>
@@ -324,19 +309,57 @@
         </div>
       </div>
 
-      <!-- Due box UX -->
+      <!-- Sub-sezione: Supporto e Internazionale -->
+      <div class="documenti-boxes">
+        <div class="doc-box doc-box-career">
+          <div class="doc-box-header">
+            <span class="doc-box-icon">❓</span>
+            <h3 data-i18n="carriera.helpTitle">Supporto 24/7 – LUM Help</h3>
+          </div>
+          <p data-i18n="carriera.helpDesc">Accedi al portale di supporto tecnico per assistenza su Google Workspace, Exam.net e tutti i servizi digitali LUM.</p>
+          <ul class="doc-box-list">
+            <li data-i18n-html="carriera.helpItem1Html">🖥️ <a href="https://help.lum.it/" target="_blank" rel="noopener">Portale LUM Help</a> – FAQ e assistenza tecnica</li>
+            <li data-i18n-html="carriera.helpItem2Html">📧 <a href="https://mail.google.com/a/lum.it" target="_blank" rel="noopener">Google Workspace</a> – Email e strumenti universitari</li>
+          </ul>
+          <a href="https://help.lum.it/" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="carriera.helpBtn">Vai al Supporto →</a>
+        </div>
         <div class="doc-box doc-box-cv">
           <div class="doc-box-header">
-            <span class="doc-box-icon">🌟</span>
-            <h3 data-i18n="documenti.boxTitle">Arricchisci il tuo CV</h3>
+            <span class="doc-box-icon">🌍</span>
+            <h3 data-i18n="carriera.erasmusTitle">Internazionale – Erasmus+</h3>
           </div>
-          <p data-i18n="documenti.boxDesc">Opportunità per acquisire CFU extra e competenze trasversali spendibili nel mondo del lavoro.</p>
+          <p data-i18n="carriera.erasmusDesc">Accordi con università partner in tutta Europa per periodi di studio e tirocinio all'estero, aperti a tutti gli studenti iscritti.</p>
           <ul class="doc-box-list">
-            <li data-i18n-html="documenti.boxItem1Html">🔬 <a href="https://www.lum.it/eventi/?filter_cat=7699" target="_blank" rel="noopener">Seminari e Workshop</a> – 2 CFU (FameLab, Open Lecture Digital Human &amp; AI)</li>
-            <li data-i18n-html="documenti.boxItem2Html">🏭 <a href="https://www.lum.it/job-opportunities/" target="_blank" rel="noopener">Tirocini in Azienda</a> – 6/15 CFU (magistrale)</li>
-            <li data-i18n-html="documenti.boxItem3Html">🧪 <a href="https://www.lum.it/lumascolta/" target="_blank" rel="noopener">Laboratori Specializzati</a> – LumAscolta - L.O.V. Lab e Teaching Center (TCLLL)</li>
-            <li data-i18n-html="documenti.boxItem4Html">📰 <a href="https://www.lum.it/eventi/" target="_blank" rel="noopener">Bacheca News ed Eventi imminenti →</a></li>
+            <li data-i18n-html="carriera.erasmusItem1Html">✈️ <a href="https://www.lum.it/international-mobility/" target="_blank" rel="noopener">Mobilità Internazionale</a> – Programmi di scambio</li>
+            <li data-i18n-html="carriera.erasmusItem2Html">🎓 <a href="https://www.lum.it/erasmus/" target="_blank" rel="noopener">Erasmus+ LUM</a> – Università partner in Europa</li>
           </ul>
+          <a href="https://www.lum.it/international-mobility/" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="carriera.erasmusBtn">Scopri Erasmus+ →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Orientamento e Futuro (Placement) ─────────────────── -->
+  <section class="orientamento-section" id="orientamento">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="orientamento.badge">Orientamento e Futuro</span>
+        <h2 data-i18n="orientamento.title">Dal Campus al Lavoro</h2>
+        <p data-i18n="orientamento.desc">Strumenti per prepararti all'ingresso nel mondo del lavoro: test di valutazione, stage e opportunità con le imprese partner.</p>
+      </div>
+      <div class="orientamento-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📝</div>
+          <h3 data-i18n="orientamento.tdvTitle">Test di Valutazione (TdV)</h3>
+          <p data-i18n="orientamento.tdvDesc">Test di ingresso per le matricole sulle conoscenze di Matematica, Logica e Inglese. Identifica i punti di forza e le aree di miglioramento per iniziare al meglio il percorso universitario.</p>
+          <a href="https://www.lum.it/dipartimento-di-ingegneria/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="orientamento.tdvBtn">Scopri il TdV →</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3 data-i18n="orientamento.jobTitle">Job Opportunities</h3>
+          <p data-i18n="orientamento.jobDesc">Collegamento diretto con le imprese partner per stage e tirocini curriculari ed extracurriculari. Costruisci la tua rete professionale già durante gli studi.</p>
+          <a href="https://www.lum.it/job-opportunities/" target="_blank" rel="noopener" class="btn btn-outline feature-btn" data-i18n="orientamento.jobBtn">Esplora Opportunità →</a>
         </div>
       </div>
     </div>
@@ -410,13 +433,13 @@
     </div>
   </section>
 
-  <!-- ── Research Section ───────────────────────────────── -->
+  <!-- ── Ricerca e Innovazione (Hub Tecnologico) ───────────── -->
   <section class="research-section" id="ricerca">
     <div class="research-grid">
       <div class="research-content">
-        <span class="section-badge section-badge-dark" data-i18n="research.badge">Ricerca e Sviluppo</span>
-        <h2 data-i18n="research.title">Pionieri dell'innovazione ingegneristica</h2>
-        <p data-i18n="research.desc">Il nostro dipartimento affronta le sfide tecnologiche del futuro: dalla sostenibilità all'intelligenza artificiale, dalle smart city alle energie rinnovabili.</p>
+        <span class="section-badge section-badge-dark" data-i18n="research.badge">Ricerca e Innovazione</span>
+        <h2 data-i18n="research.title">Hub Tecnologico del Dipartimento</h2>
+        <p data-i18n="research.desc">Osservatori di ricerca attivi e collaborazioni strategiche con il mondo imprenditoriale per il trasferimento tecnologico e l'innovazione industriale.</p>
         <div class="tag-cloud">
           <span class="tag" data-i18n="research.tag1">Intelligenza Artificiale</span>
           <span class="tag" data-i18n="research.tag2">Ingegneria Bio Medicale</span>
@@ -425,38 +448,38 @@
           <span class="tag" data-i18n="research.tag5">Automazione</span>
           <span class="tag" data-i18n="research.tag6">Smart Cities</span>
           <span class="tag" data-i18n="research.tag7">Machine Learning</span>
-          <span class="tag" data-i18n="research.tag8">Energie Rinnovabili</span>
+          <span class="tag" data-i18n="research.tag8">Industria 5.0</span>
         </div>
         <a href="https://www.lum.it/strutture-di-ricerca/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="research.btnMore">Scopri di più</a>
       </div>
 
       <div class="research-cards">
         <div class="research-card">
-          <div class="research-card-icon">🤖</div>
+          <div class="research-card-icon">🏛️</div>
           <div>
-            <h4 data-i18n="research.card1Title">Intelligenza Artificiale</h4>
-            <p data-i18n="research.card1Desc">Ricerca applicata in Machine Learning e AI</p>
+            <h4 data-i18n="research.card1Title">Osservatorio Crisi d'Impresa</h4>
+            <p data-i18n="research.card1Desc">Analisi e ricerca sui processi di risanamento e ristrutturazione aziendale</p>
           </div>
         </div>
         <div class="research-card">
-          <div class="research-card-icon">⚡</div>
+          <div class="research-card-icon">🔎</div>
           <div>
-            <h4 data-i18n="research.card2Title">Energie Rinnovabili</h4>
-            <p data-i18n="research.card2Desc">Soluzioni innovative per un futuro sostenibile</p>
+            <h4 data-i18n="research.card2Title">Osservatorio sul Digitale</h4>
+            <p data-i18n="research.card2Desc">Monitoraggio della trasformazione digitale nelle imprese e nella PA</p>
           </div>
         </div>
         <div class="research-card">
-          <div class="research-card-icon">🏗️</div>
+          <div class="research-card-icon">🏥</div>
           <div>
-            <h4 data-i18n="research.card3Title">Ingegneria Civile</h4>
-            <p data-i18n="research.card3Desc">Infrastrutture e urbanistica moderna</p>
+            <h4 data-i18n="research.card3Title">Lean Healthcare</h4>
+            <p data-i18n="research.card3Desc">Applicazione di metodologie lean e biomediche nei sistemi sanitari</p>
           </div>
         </div>
         <div class="research-card">
-          <div class="research-card-icon">📡</div>
+          <div class="research-card-icon">🏭</div>
           <div>
-            <h4 data-i18n="research.card4Title">Internet of Things</h4>
-            <p data-i18n="research.card4Desc">Sistemi connessi e smart environment</p>
+            <h4 data-i18n="research.card4Title">Smart District 4.0 – LUM Enterprise</h4>
+            <p data-i18n="research.card4Desc">Laboratorio di innovazione che connette studenti e imprese del territorio</p>
           </div>
         </div>
       </div>

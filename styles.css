@@ -610,6 +610,89 @@ body {
   margin-bottom: 1.25rem;
 }
 
+/* ── Corsi di Laurea Grid (2 × 2) ─────────────────────────── */
+.corsi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.course-badge {
+  display: inline-block;
+  background: var(--green-100);
+  color: var(--green-700);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: .25rem .75rem;
+  border-radius: 2rem;
+  margin-bottom: .75rem;
+  align-self: flex-start;
+}
+
+.course-badge-master {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.corsi-nav-area {
+  background: var(--bg-light);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.corsi-nav-label {
+  font-weight: 700;
+  color: var(--dark);
+  font-size: .9rem;
+  white-space: nowrap;
+}
+
+.corsi-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+/* ── Carriera e Servizi sub-headings ───────────────────────── */
+.carriera-sub-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--green-800);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin: 2.5rem 0 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.carriera-sub-heading::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: var(--green-100);
+  border-radius: 1px;
+}
+
+/* ── Orientamento e Futuro Section ────────────────────────── */
+.orientamento-section {
+  padding: 6rem 2rem;
+  background: var(--white);
+}
+
+.orientamento-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
 /* ── Research Section ──────────────────────────────────────── */
 .research-section {
   background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%);
@@ -1749,6 +1832,7 @@ section[id], div.stats-bar, footer {
 
   .modulistica-grid { grid-template-columns: repeat(2, 1fr); }
   .news-grid { grid-template-columns: 1fr; }
+  .orientamento-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -1787,6 +1871,9 @@ section[id], div.stats-bar, footer {
   }
 
   .features-grid { grid-template-columns: 1fr; }
+  .corsi-grid { grid-template-columns: 1fr; }
+  .corsi-nav-area { flex-direction: column; align-items: flex-start; }
+  .orientamento-grid { grid-template-columns: 1fr; }
 
   .footer-top { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: .5rem; text-align: center; }
